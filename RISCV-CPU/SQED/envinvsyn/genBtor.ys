@@ -1,0 +1,35 @@
+read_verilog -sv ../verilog/ALU.v \
+../verilog/ALUcontrol.v \
+../verilog/control_path.v \
+../verilog/data_memory.v \
+../verilog/EX_MEM_reg.v \
+../verilog/EX.v \
+../verilog/forwarding.v \
+../verilog/hazard_detection.v \
+../verilog/ID_EX_reg.v \
+../verilog/ID.v \
+../verilog/if_id_pipe.v \
+../verilog/IF.v \
+../verilog/MEM_WB_reg.v \
+../verilog/mux3_1.v \
+../verilog/RISC_V.v \
+../verilog/adder.v \
+../verilog/registers.v \
+../verilog/mux2_1.v \
+../verilog/imm_gen.v \
+../verilog/instruction_memory.v \
+../verilog/PC.v 
+
+prep -top RISC_V
+
+hierarchy -check
+proc
+chformal -assume -early;
+
+memory -nordff;
+flatten
+setundef -undriven -expose;
+sim -clock clk -reset reset -rstlen 5 -n 5 -zinit -w RISC_V
+opt;
+dffunmap
+write_btor -s design.btor
