@@ -1,0 +1,64 @@
+read_verilog -formal ./QEDFiles/inst_constraints.v \
+./QEDFiles/modify_instruction.v \
+./QEDFiles/qed_decoder.v \
+./QEDFiles/qed_i_cache.v \
+./QEDFiles/qed_instruction_mux.v \
+./QEDFiles/qed.v \
+./verilog/tinyriscv.v \
+./verilog/rib.v \
+./verilog/regs.v \
+./verilog/pc_reg.v \
+./verilog/if_id.v \
+./verilog/id.v \
+./verilog/id_ex.v \
+./verilog/gen_dff.v \
+./verilog/gen_buf.v \
+./verilog/full_handshake_tx.v \
+./verilog/full_handshake_rx.v \
+./verilog/ex.v \
+./verilog/div.v \
+./verilog/defines.v \
+./verilog/ctrl.v \
+./verilog/csr_reg.v \
+./verilog/clint.v;
+# prep does a conservative elaboration
+# of the top module provided
+prep -top top;
+
+# this command just does a sanity check
+# of the hierarchy
+hierarchy -check;
+
+# If an assumption is flopped, you might
+# see strange behavior at the last state
+# (because the clock hasn't toggled)
+# this command ensures that assumptions
+# hold at every state
+chformal -assume -early;
+
+# this processes memories
+# nomap means it will keep them as arrays
+memory;
+
+# flatten the design hierarchy
+flatten;
+
+# (optional) uncomment and set values to simulate reset signal
+# use -resetn for an active low pin
+# -n configures the number of cycles to simulate
+# -rstlen configures how long the reset is active (recommended to keep it active for the whole simulation)
+# -w tells it to write back the final state of the simulation as the initial state in the btor2 file
+# another useful option is -zinit which zero initializes any uninitialized state
+# sim -clock clk -resetn reset_x -n 1 -rstlen 1 -w top
+
+# This turns all undriven signals into
+# inputs
+setundef -undriven -expose;
+sim -clock clk -reset rst -n 5 -rstlen 5 -w top
+sim -clock clk -reset outside_rst -n 5 -rstlen 5 -w top
+opt;
+
+dffunmap;
+
+# This writes to a file in BTOR2 format
+write_btor -s tinyriscv.btor2

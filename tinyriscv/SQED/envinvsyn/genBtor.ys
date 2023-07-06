@@ -1,0 +1,31 @@
+read_verilog -sv ../verilog/tinyriscv.v \
+../verilog/rib.v \
+../verilog/regs.v \
+../verilog/pc_reg.v \
+../verilog/if_id.v \
+../verilog/id.v \
+../verilog/id_ex.v \
+../verilog/gen_dff.v \
+../verilog/gen_buf.v \
+../verilog/full_handshake_tx.v \
+../verilog/full_handshake_rx.v \
+../verilog/ex.v \
+../verilog/div.v \
+../verilog/defines.v \
+../verilog/ctrl.v \
+../verilog/csr_reg.v \
+../verilog/clint.v \
+
+prep -top tinyriscv
+
+hierarchy -check
+proc
+chformal -assume -early;
+
+memory -nordff;
+flatten
+setundef -undriven -expose;
+sim -clock clk -resetn rst -rstlen 1 -n 1 -w tinyriscv
+opt;
+dffunmap
+write_btor -s design.btor
