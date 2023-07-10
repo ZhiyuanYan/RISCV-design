@@ -3,7 +3,7 @@ This repository contains several RISC-V cores based on Verilog design that incor
  
 
 1. mriscvcore (Original repository: [link](https://github.com/onchipuis/mriscvcore))
-     This repository hosts the MRISCVCORE RISC-V core. Please note that the QED module has not been added yet.
+     The MRISCVCORE RISC-V core with the QED module has been added to JasperGold for testing purposes in this repository. When model checking process starts from reset, the result is safe. However, when starting from a symbolic starting state, the result is deemed unsafe. This occurs because, despite the instructions being transmitted from QED module correctly, one of them is not executed and gets flushed due to the presence of a duplicate instruction.
 
 2. RISCV-CPU (Original repository: [link](https://github.com/georgetoader/RISCV-CPU))
       In this repository, the RISCV-CPU RISC-V core is being developed with an ongoing effort to add the QED module. Currently, there are some bugs that need to be fixed. You can find the core and the QED module in the "RISCV-CPU/SQED" folder.

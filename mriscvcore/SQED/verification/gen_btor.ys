@@ -1,0 +1,26 @@
+read_verilog -formal ./verilog/ALU.v \
+./verilog/DECO_INSTR.v \
+./verilog/FSM.v \
+./verilog/IRQ.v \
+./verilog/MEMORY_INTERFACE.v \
+./verilog/mriscvcore.v \
+./verilog/REG_FILE.v \
+./verilog/MULT.v \
+./verilog/UTILITY.v \
+./QEDFiles/qed.v \
+./QEDFiles/qed_i_cache.v \
+./QEDFiles/modify_instruction.v \
+./QEDFiles/inst_constraints.v \
+./QEDFiles/qed_decoder.v \
+./QEDFiles/qed_instruction_mux.v;
+
+prep -top top;
+hierarchy -check
+#proc
+chformal -assume -early;
+
+memory;
+flatten
+setundef -undriven -expose;
+sim -clock clk -resetn outside_resetn -rstlen 1 -n 1 -w top
+write_btor -s problem.btor2

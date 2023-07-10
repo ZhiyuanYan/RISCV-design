@@ -1,0 +1,23 @@
+read_verilog -formal ../verilog/ALU.v \
+../verilog/DECO_INSTR.v \
+../verilog/FSM.v \
+../verilog/IRQ.v \
+../verilog/MEMORY_INTERFACE.v \
+../verilog/mriscvcore.v \
+../verilog/REG_FILE.v \
+../verilog/MULT.v \
+../verilog/UTILITY.v \
+
+prep -top tinyriscv
+
+hierarchy -check
+proc
+chformal -assume -early;
+
+memory -nordff;
+flatten
+setundef -undriven -expose;
+sim -clock clk -resetn rst -rstlen 1 -n 1 -w tinyriscv
+opt;
+dffunmap
+write_btor -s design.btor

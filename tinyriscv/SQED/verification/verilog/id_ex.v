@@ -107,6 +107,7 @@ module id_ex(
     wire[`MemAddrBus] op2_jump;
     gen_pipe_dff #(32) op2_jump_ff(clk, rst, hold_en, `ZeroWord, op2_jump_i, op2_jump);
     assign op2_jump_o = op2_jump;
+    
     always@(posedge clk) begin
         if(outside_rst == `RstEnable)
             qed_vld_out_id_ex <= 0;
