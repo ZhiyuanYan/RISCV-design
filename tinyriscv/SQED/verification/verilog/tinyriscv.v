@@ -20,7 +20,7 @@ module top(
     input wire clk,
     input wire rst,
     input wire outside_rst,
-    input wire instruction,
+    input wire [31:0] instruction,
     input qed_exec_dup,
     output wire[`MemAddrBus] rib_ex_addr_o,    // 读、写外设的地址
     input wire[`MemBus] rib_ex_data_i,         // 从外设读取的数据
@@ -47,7 +47,7 @@ module top(
                                     .instruction(instruction));
     ///QED 测试我们应该不需要jtag
     assume property (jtag_reg_we_i==0);
-
+    assume property (rib_ex_data_i[`MemBus]==32'b0);
     tinyriscv RTL(
         .instruction(instruction),
         .clk(clk),
@@ -73,7 +73,7 @@ module top(
 endmodule
 // tinyriscv处理器核顶层模块
 module tinyriscv(
-    input instruction,
+    input [31:0] instruction,
     input wire clk,
     input wire rst,
     input wire outside_rst,
@@ -209,7 +209,7 @@ module tinyriscv(
 	wire [31:0]  qed_ifu_instruction;
 
     wire stall_IF;
-    assign stall_IF = (ctrl_hold_flag_o==3'b000) ? 0 : 1;
+    assign stall_IF = (ctrl_hold_flag_o >= `Hold_If);
 	qed qed0 ( // Inputs
       .clk(clk),
             .rst(~outside_rst),

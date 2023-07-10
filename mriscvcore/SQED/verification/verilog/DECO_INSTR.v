@@ -20,6 +20,7 @@ module DECO_INSTR(
     end
 
     always @* begin
+        //TODO:YZY, we need to init it to rdi = {5{1'b0}};
         // immr = {32{1'b1}};
         // rdi = {5{1'b1}};
         // rs1i ={5{1'b1}};

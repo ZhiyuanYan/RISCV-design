@@ -139,7 +139,7 @@ module ex(
     // 无符号数比较
     assign op1_ge_op2_unsigned = op1_i >= op2_i;
     assign op1_eq_op2 = (op1_i == op2_i);
-
+    //TODO：乘法似乎写的有问题
     assign mul_temp = mul_op1 * mul_op2;
     assign mul_temp_invert = ~mul_temp + 1;
 

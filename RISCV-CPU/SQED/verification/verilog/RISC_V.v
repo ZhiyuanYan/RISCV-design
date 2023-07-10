@@ -36,7 +36,7 @@ endmodule
 
 
 module RISC_V(input clk, // smenalul de ceas global
-              input instruction,
+              input [31:0] instruction,
               input reset, // semnalul de reset global
               inout outside_reset,
               input qed_exec_dup,

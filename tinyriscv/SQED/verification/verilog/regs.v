@@ -108,12 +108,20 @@ module regs(
     reg [15:0] num_dup_insts;
     wire [1:0] num_orig_commits;
     wire [1:0] num_dup_commits;
-	wire __START__;
+	wire __NOTSTART__;
 	wire qed_reach_commit;
-	// assign qed_reach_commit = qed_vld_out_id_ex || (qed_vld_out_if_id && (!rst) && (we_i) && (waddr_i));
+    reg precessor;
+	//assign qed_reach_commit = qed_vld_out_id_ex || (qed_vld_out_if_id && (!rst) && (we_i) && (waddr_i));
 	assign qed_reach_commit = qed_vld_out_id_ex;
-    assign __START__ = (qed_reach_commit && (num_orig_insts==0)&&(num_dup_insts==0));
-	assume property ((~__START__)||((regs[0] == regs[16])&&(regs[1] == regs[17])&&(regs[2] == regs[18])&&(regs[3] == regs[19])&&(regs[4] == regs[20])&&(regs[5] == regs[21])
+    assign __NOTSTART__ = (qed_reach_commit && (num_orig_insts==0)&&(num_dup_insts==0));
+	always@(posedge clk)begin
+        if(!outside_rst)
+            precessor<= 0;
+        else
+            if(__NOTSTART__!=0)
+                precessor <= 1;
+    end
+    assume property ((precessor)||((regs[0] == regs[16])&&(regs[1] == regs[17])&&(regs[2] == regs[18])&&(regs[3] == regs[19])&&(regs[4] == regs[20])&&(regs[5] == regs[21])
 	&&(regs[6] == regs[22])&&(regs[7] == regs[23])&&(regs[8] == regs[24])&&(regs[9] == regs[25])&&(regs[10] == regs[26])&&(regs[11] == regs[27])&&(regs[12] == regs[28])
 	&&(regs[13] == regs[29])&&(regs[14] == regs[30])&&(regs[15] == regs[31])));
 
