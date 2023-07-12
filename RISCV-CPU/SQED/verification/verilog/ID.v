@@ -1,4 +1,6 @@
 module ID(input clk,
+          input outside_reset, 
+          input qed_vld_out_ex_mem,
           input [31:0] PC_ID,INSTRUCTION_ID,
           // input [31:0] INSTRUCTION_ID,
           input RegWrite_WB, 
@@ -21,6 +23,8 @@ module ID(input clk,
   assign RS2_ID = INSTRUCTION_ID[24:20];
 
   registers REGISTER_FILE_MODULE(clk,RegWrite_WB, 
+                                 outside_reset, 
+                                 qed_vld_out_ex_mem,
                                  RS1_ID,    
                                  RS2_ID,    
                                  RD_WB,     

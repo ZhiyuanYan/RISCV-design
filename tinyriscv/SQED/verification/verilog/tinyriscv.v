@@ -21,7 +21,6 @@ module top(
     input wire rst,
     input wire outside_rst,
     input wire [31:0] instruction,
-    input qed_exec_dup,
     output wire[`MemAddrBus] rib_ex_addr_o,    // 读、写外设的地址
     input wire[`MemBus] rib_ex_data_i,         // 从外设读取的数据
     output wire[`MemBus] rib_ex_data_o,        // 写入外设的数据
@@ -45,6 +44,8 @@ module top(
 
     inst_constraint inst_constraint0(.clk(clk),
                                     .instruction(instruction));
+
+
     ///QED 测试我们应该不需要jtag
     assume property (jtag_reg_we_i==0);
     assume property (rib_ex_data_i[`MemBus]==32'b0);
@@ -53,7 +54,6 @@ module top(
         .clk(clk),
         .rst(rst),
         .outside_rst(outside_rst),
-        .qed_exec_dup(qed_exec_dup),
         .rib_ex_addr_o(rib_ex_addr_o),
         .rib_ex_data_i(rib_ex_data_i),
         .rib_ex_data_o(rib_ex_data_o),
@@ -77,7 +77,6 @@ module tinyriscv(
     input wire clk,
     input wire rst,
     input wire outside_rst,
-    input  qed_exec_dup,
     output wire[`MemAddrBus] rib_ex_addr_o,    // 读、写外设的地址
     input wire[`MemBus] rib_ex_data_i,         // 从外设读取的数据
     output wire[`MemBus] rib_ex_data_o,        // 写入外设的数据
@@ -209,7 +208,8 @@ module tinyriscv(
 	wire [31:0]  qed_ifu_instruction;
 
     wire stall_IF;
-    assign stall_IF = (ctrl_hold_flag_o >= `Hold_If);
+    wire qed_exec_dup;
+    assign stall_IF = (ctrl_hold_flag_o >= `Hold_Pc);
 	qed qed0 ( // Inputs
       .clk(clk),
             .rst(~outside_rst),

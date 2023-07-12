@@ -1,7 +1,11 @@
-module IF(input clk, reset, 
+module IF(input clk, reset,outside_reset,
+          input [31:0] instruction,
+          input qed_exec_dup,
           input PCSrc, PC_write,
           input [31:0] PC_Branch,
-          output [31:0] PC_IF,INSTRUCTION_IF);
+          output [31:0] PC_IF,INSTRUCTION_IF,
+          output [31:0] qed_ifu_instruction,
+          output qed_vld_out);
 
   wire [9:0] instruction_address = PC_IF[11:2];
   wire [31:0] PC_MUX;
@@ -18,5 +22,14 @@ module IF(input clk, reset,
                 PCSrc,              //select if we take or not the branch(if there is a branch instruction)
                 PC_MUX); 
 
-
+  qed qed0 ( // Inputs
+      .clk(clk),
+            .rst(outside_reset),
+            .ena(1'b1),
+            .ifu_qed_instruction(instruction),
+            .exec_dup(qed_exec_dup),
+            .stall_IF(!(PC_write)),
+      // outputs
+            .qed_ifu_instruction(qed_ifu_instruction),
+            .vld_out(qed_vld_out));
 endmodule

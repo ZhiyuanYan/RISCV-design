@@ -83,7 +83,7 @@ module RISC_V(input clk, // smenalul de ceas global
     
     IF_ID_reg IF_ID_Reg(clk, reset, outside_reset, IF_IDwrite, PC_IF, qed_vld_out, qed_ifu_instruction, PC_ID, INSTRUCTION_ID, qed_vld_out_if_id);
     
-    ID instruction_decode(clk, PC_ID ,INSTRUCTION_ID, RegWrite, ALU_DATA_WB, RD_WB, IMM_ID,
+    ID instruction_decode(clk, outside_reset, qed_vld_out_ex_mem,PC_ID ,INSTRUCTION_ID, RegWrite, ALU_DATA_WB, RD_WB, IMM_ID,
                           REG_DATA1_ID, REG_DATA2_ID, FUNCT3_ID, FUNCT7_ID, OPCODE_ID, RD_ID,
                           RS1_ID, RS2_ID);
                           
@@ -166,7 +166,7 @@ module RISC_V(input clk, // smenalul de ceas global
                           PC_MEM, ALU_MEM, REG_DATA2_MEM, RD_MEM,
                           MemRead_MEM, MemWrite_MEM, Branch_MEM, MemtoReg_MEM, RegWrite_MEM, ZERO_MEM,qed_vld_out_ex_mem);
                           
-    data_memory uut_data_memory(clk, outside_reset, qed_vld_out_ex_mem,MemRead_MEM, MemWrite_MEM, ALU_MEM, REG_DATA2_MEM,
+    data_memory uut_data_memory(clk,MemRead_MEM, MemWrite_MEM, ALU_MEM, REG_DATA2_MEM,
                                 DATA_MEMORY_MEM);
                                 
     wire MEM_WB_write;
