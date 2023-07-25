@@ -1,3 +1,5 @@
+Now there is no bug for tinyriscv in SQED test, from reset.
+
 # RISC-V Cores with SQED Detection
 
 This repository contains several RISC-V cores based on Verilog design that incorporate SQED modules.
@@ -13,3 +15,5 @@ This repository contains several RISC-V cores based on Verilog design that incor
 4. tinyriscv (Original repository: [link](https://github.com/liangkangnan/tinyriscv))
    Now there is no bug for tinyriscv in SQED test, from reset.
 5. ibex(Zero-Riscy)
+
+   Now there is no bug for ibex in SQED test, from reset. But it is implemented by SystemVerilog.
