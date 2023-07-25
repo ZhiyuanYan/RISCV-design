@@ -1,0 +1,1461 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2022.12
+# platform  : Linux 3.10.0-1160.el7.x86_64
+# version   : 2022.12p001 64 bits
+# build date: 2023.01.26 12:35:17 UTC
+# ----------------------------------------
+# started   : 2023-07-19 22:54:45 CST
+# hostname  : mics-eda.(none)
+# pid       : 39312
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:40854' '-style' 'windows' '-data' 'AAAAanicY2RgYLCp////PwMYMFcBCQEGHwZfhiAGVyDpzxAGpOGA8QGUYcPIgAwYAxtQaAYGVphCmBIAzrAJsQ==' '-proj' '/home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2022 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_pint" and "jasper_fao".
+INFO: reading configuration file "/home/zhiyuanyan/.config/cadence/jasper.conf".
+% source jp.tcl
+couldn't read file "jp.tcl": no such file or directory
+
+% ls
+gen-btor.ys
+jgproject
+QEDFiles
+tinyriscv.tcl
+verilog
+% source 
+wrong # args: should be "source ?-encoding name? fileName"
+
+% source 
+wrong # args: should be "source ?-encoding name? fileName"
+
+% source tinyriscv.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] ./QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] ./QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/clint.v'
+[INFO (VERI-1328)] ./verilog/clint.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/csr_reg.v'
+[INFO (VERI-1328)] ./verilog/csr_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ctrl.v'
+[INFO (VERI-1328)] ./verilog/ctrl.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/div.v'
+[INFO (VERI-1328)] ./verilog/div.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ex.v'
+[INFO (VERI-1328)] ./verilog/ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_tx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(71): identifier 'ack' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(79): identifier 'ack' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_rx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(60): identifier 'req' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(68): identifier 'req' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_dff.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_buf.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id.v'
+[INFO (VERI-1328)] ./verilog/id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id_ex.v'
+[INFO (VERI-1328)] ./verilog/id_ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/if_id.v'
+[INFO (VERI-1328)] ./verilog/if_id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/pc_reg.v'
+[INFO (VERI-1328)] ./verilog/pc_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/regs.v'
+[INFO (VERI-1328)] ./verilog/regs.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/regs.v(126): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/regs.v(146): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './verilog/rib.v'
+[INFO (VERI-1328)] ./verilog/rib.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/tinyriscv.v'
+[INFO (VERI-1328)] ./verilog/tinyriscv.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(48): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(49): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] ./verilog/tinyriscv.v(71): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] ./QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[INFO (VERI-1018)] ./QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] ./QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] ./QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] ./QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] ./QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] ./verilog/pc_reg.v(20): compiling module 'pc_reg'
+[INFO (VERI-1018)] ./verilog/ctrl.v(21): compiling module 'ctrl'
+[INFO (VERI-1018)] ./verilog/regs.v(20): compiling module 'regs'
+[INFO (VERI-1018)] ./verilog/csr_reg.v(20): compiling module 'csr_reg'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=8)'
+[INFO (VERI-1018)] ./verilog/if_id.v(20): compiling module 'if_id'
+[INFO (VERI-1018)] ./verilog/id.v(21): compiling module 'id'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=1)'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=5)'
+[INFO (VERI-1018)] ./verilog/id_ex.v(20): compiling module 'id_ex'
+[INFO (VERI-1018)] ./verilog/ex.v(21): compiling module 'ex'
+[WARN (VERI-1209)] ./verilog/ex.v(146): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./verilog/ex.v(147): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] ./verilog/div.v(22): compiling module 'div'
+[INFO (VERI-1018)] ./verilog/clint.v(22): compiling module 'clint'
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(73): compiling module 'tinyriscv'
+[WARN (VDB-1002)] ./verilog/tinyriscv.v(206): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(19): compiling module 'top'
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          22 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (22 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      27 (19 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst outside_rst".
+Ncustom1: Custom engine code is hT3Ng7hPPfiYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSl+CwjiTMAQA
+Bcustom2: Custom engine code is hT3Nm7hPr1Vp3Di1Ra2USNIGL4JypRnLKLAdF6JAyuavO2JfGCiY9OZJhcAcOUnLx5xwNdhILGrAWX9s+z2WDkKwNR7tAfClBEjRFVQeq6DU54boFgEA
+AMcustom3: Custom engine code is hT3Ng7hP/feYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSmmqwm7g9AQA
+Mpcustom4: Custom engine code is hT3NZbhP9fmY2AbBQnsjfOxn6c+6e6yL+/e8fZFmaQrnlgEA
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1142 of 6262 design flops, 0 of 0 design latches, 1 of 1 internal elements.
+INFO (IRS039): Reset analysis complete.
+ERROR (ENL024): Combinational loop found within the cone of influence for "RTL.u_ctrl.hold_flag_o[1]".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 1 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+[<embedded>] % get_reset_info
+List of Registers: 52
+-----------------
+RTL.qed0.qic.address_head
+  Value at reset: 7'b0
+RTL.qed0.qic.address_tail
+  Value at reset: 7'b0
+RTL.u_clint.cause
+  Value at reset: 32'b0
+RTL.u_clint.csr_state
+  Value at reset: 5'b00001
+RTL.u_clint.data_o
+  Value at reset: 32'b0
+RTL.u_clint.inst_addr
+  Value at reset: 32'b0
+RTL.u_clint.int_addr_o
+  Value at reset: 32'b0
+RTL.u_clint.int_assert_o
+  Value at reset: 1'b0
+RTL.u_clint.waddr_o
+  Value at reset: 32'b0
+RTL.u_clint.we_o
+  Value at reset: 1'b0
+RTL.u_csr_reg.cycle
+  Value at reset: 64'b0
+RTL.u_csr_reg.mcause
+  Value at reset: 32'b0
+RTL.u_csr_reg.mepc
+  Value at reset: 32'b0
+RTL.u_csr_reg.mie
+  Value at reset: 32'b0
+RTL.u_csr_reg.mscratch
+  Value at reset: 32'b0
+RTL.u_csr_reg.mstatus
+  Value at reset: 32'b0
+RTL.u_csr_reg.mtvec
+  Value at reset: 32'b0
+RTL.u_div.busy_o
+  Value at reset: 1'b0
+RTL.u_div.count
+  Value at reset: 32'b0
+RTL.u_div.div_remain
+  Value at reset: 32'b0
+RTL.u_div.div_result
+  Value at reset: 32'b0
+RTL.u_div.dividend_r
+  Value at reset: 32'b0
+RTL.u_div.divisor_r
+  Value at reset: 32'b0
+RTL.u_div.invert_result
+  Value at reset: 1'b0
+RTL.u_div.minuend
+  Value at reset: 32'b0
+RTL.u_div.op_r
+  Value at reset: 3'b0
+RTL.u_div.ready_o
+  Value at reset: 1'b0
+RTL.u_div.reg_waddr_o
+  Value at reset: 5'b0
+RTL.u_div.result_o
+  Value at reset: 32'b0
+RTL.u_div.state
+  Value at reset: 4'b0001
+RTL.u_id_ex.csr_rdata_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.csr_waddr_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.csr_we_ff.qout_r
+  Value at reset: 1'b0
+RTL.u_id_ex.inst_addr_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.inst_ff.qout_r
+  Value at reset: 32'b00000000000000000000000000000001
+RTL.u_id_ex.op1_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.op1_jump_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.op2_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.op2_jump_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.qed_vld_out_id_ex
+  Value at reset: 1'b0
+RTL.u_id_ex.reg1_rdata_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.reg2_rdata_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_id_ex.reg_waddr_ff.qout_r
+  Value at reset: 5'b0
+RTL.u_id_ex.reg_we_ff.qout_r
+  Value at reset: 1'b0
+RTL.u_if_id.inst_addr_ff.qout_r
+  Value at reset: 32'b0
+RTL.u_if_id.inst_ff.qout_r
+  Value at reset: 32'b00000000000000000000000000000001
+RTL.u_if_id.int_ff.qout_r
+  Value at reset: 8'b0
+RTL.u_if_id.qed_vld_out_if_id
+  Value at reset: 1'b0
+RTL.u_pc_reg.pc_o
+  Value at reset: 32'b0
+RTL.u_regs.num_dup_insts
+  Value at reset: 16'b0
+RTL.u_regs.num_orig_insts
+  Value at reset: 16'b0
+RTL.u_regs.precessor
+  Value at reset: 1'b0
+{RTL.qed0.qic.address_head 7'b0} {RTL.qed0.qic.address_tail 7'b0} {RTL.u_clint.cause 32'b0} {RTL.u_clint.csr_state 5'b00001} {RTL.u_clint.data_o 32'b0} {RTL.u_clint.inst_addr 32'b0} {RTL.u_clint.int_addr_o 32'b0} {RTL.u_clint.int_assert_o 1'b0} {RTL.u_clint.waddr_o 32'b0} {RTL.u_clint.we_o 1'b0} {RTL.u_csr_reg.cycle 64'b0} {RTL.u_csr_reg.mcause 32'b0} {RTL.u_csr_reg.mepc 32'b0} {RTL.u_csr_reg.mie 32'b0} {RTL.u_csr_reg.mscratch 32'b0} {RTL.u_csr_reg.mstatus 32'b0} {RTL.u_csr_reg.mtvec 32'b0} {RTL.u_div.busy_o 1'b0} {RTL.u_div.count 32'b0} {RTL.u_div.div_remain 32'b0} {RTL.u_div.div_result 32'b0} {RTL.u_div.dividend_r 32'b0} {RTL.u_div.divisor_r 32'b0} {RTL.u_div.invert_result 1'b0} {RTL.u_div.minuend 32'b0} {RTL.u_div.op_r 3'b0} {RTL.u_div.ready_o 1'b0} {RTL.u_div.reg_waddr_o 5'b0} {RTL.u_div.result_o 32'b0} {RTL.u_div.state 4'b0001} {RTL.u_id_ex.csr_rdata_ff.qout_r 32'b0} {RTL.u_id_ex.csr_waddr_ff.qout_r 32'b0} {RTL.u_id_ex.csr_we_ff.qout_r 1'b0} {RTL.u_id_ex.inst_addr_ff.qout_r 32'b0} {RTL.u_id_ex.inst_ff.qout_r 32'b00000000000000000000000000000001} {RTL.u_id_ex.op1_ff.qout_r 32'b0} {RTL.u_id_ex.op1_jump_ff.qout_r 32'b0} {RTL.u_id_ex.op2_ff.qout_r 32'b0} {RTL.u_id_ex.op2_jump_ff.qout_r 32'b0} {RTL.u_id_ex.qed_vld_out_id_ex 1'b0} {RTL.u_id_ex.reg1_rdata_ff.qout_r 32'b0} {RTL.u_id_ex.reg2_rdata_ff.qout_r 32'b0} {RTL.u_id_ex.reg_waddr_ff.qout_r 5'b0} {RTL.u_id_ex.reg_we_ff.qout_r 1'b0} {RTL.u_if_id.inst_addr_ff.qout_r 32'b0} {RTL.u_if_id.inst_ff.qout_r 32'b00000000000000000000000000000001} {RTL.u_if_id.int_ff.qout_r 8'b0} {RTL.u_if_id.qed_vld_out_if_id 1'b0} {RTL.u_pc_reg.pc_o 32'b0} {RTL.u_regs.num_dup_insts 16'b0} {RTL.u_regs.num_orig_insts 16'b0} {RTL.u_regs.precessor 1'b0}
+[<embedded>] % cd ..
+[<embedded>] % ls
+envinvsyn
+verification
+verilog
+[<embedded>] % cd ..
+[<embedded>] % cd 
+[<embedded>] % cd /home/zhiyuanyan/mriscvcore
+[<embedded>] % ls
+verification
+[<embedded>] % cd verification
+[<embedded>] % ls
+design.btor
+gen_btor.ys
+jp_1.tcl
+jp.tcl
+problem.btor2
+QEDFiles
+reverse.v
+verilog
+[<embedded>] % source jp_1.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file 'QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/ALU.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/DECO_INSTR.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/FSM.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/IRQ.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/MEMORY_INTERFACE.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/REG_FILE.v'
+[INFO (VERI-2561)] verilog/REG_FILE.v(46): undeclared symbol 'qed_reach_commit', assumed default net type 'wire'
+[WARN (VERI-1875)] verilog/REG_FILE.v(47): identifier 'num_orig_insts' is used before its declaration
+[WARN (VERI-1875)] verilog/REG_FILE.v(47): identifier 'num_dup_insts' is used before its declaration
+[WARN (VERI-1763)] verilog/REG_FILE.v(49): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] verilog/REG_FILE.v(80): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/mriscvcore.v'
+[INFO (VERI-2561)] verilog/mriscvcore.v(201): undeclared symbol 'rdw_rsrn', assumed default net type 'wire'
+[INFO (VERI-2561)] verilog/mriscvcore.v(275): undeclared symbol 'enable_pc', assumed default net type 'wire'
+[INFO (VERI-2561)] verilog/mriscvcore.v(295): undeclared symbol 'done_exec', assumed default net type 'wire'
+[INFO (VERI-2561)] verilog/mriscvcore.v(303): undeclared symbol 'enable_exec', assumed default net type 'wire'
+[INFO (VERI-2561)] verilog/mriscvcore.v(304): undeclared symbol 'enable_exec_mem', assumed default net type 'wire'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/UTILITY.v'
+[-- (VERI-1482)] Analyzing Verilog file 'verilog/MULT.v'
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] verilog/mriscvcore.v(69): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[INFO (VERI-1018)] QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] verilog/MEMORY_INTERFACE.v(3): compiling module 'MEMORY_INTERFACE'
+[WARN (VERI-1209)] verilog/MEMORY_INTERFACE.v(231): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] verilog/MEMORY_INTERFACE.v(236): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] verilog/MEMORY_INTERFACE.v(262): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] verilog/MEMORY_INTERFACE.v(267): expression size 32 truncated to fit in target size 1
+[WARN (VDB-1002)] verilog/MEMORY_INTERFACE.v(344): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] verilog/DECO_INSTR.v(3): compiling module 'DECO_INSTR'
+[INFO (VERI-1018)] verilog/REG_FILE.v(17): compiling module 'true_dpram_sclk'
+[INFO (VERI-1018)] verilog/REG_FILE.v(83): compiling module 'REG_FILE'
+[INFO (VERI-1018)] verilog/ALU.v(387): compiling module 'ALU_add:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(419): compiling module 'ALU_sub:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(450): compiling module 'ALU_and:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(481): compiling module 'ALU_xor:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(512): compiling module 'ALU_or:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(543): compiling module 'ALU_beq:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(561): compiling module 'ALU_blt:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(579): compiling module 'ALU_bltu:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[INFO (VERI-1018)] verilog/ALU.v(597): compiling module 'ALU_sXXx:(REG_ALU=1'b1,REG_OUT=1'b1)'
+[WARN (VERI-1209)] verilog/ALU.v(628): expression size 32 truncated to fit in target size 5
+[WARN (VERI-1209)] verilog/ALU.v(633): expression size 32 truncated to fit in target size 5
+[INFO (VERI-1018)] verilog/ALU.v(3): compiling module 'ALU'
+[INFO (VERI-1018)] verilog/IRQ.v(3): compiling module 'divM'
+[INFO (VERI-8005)] verilog/IRQ.v(23): Unintentional Sequential element inferred for divcounter read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(7): Unintentional Sequential element inferred for clk_out read before write using blocking assignment
+[INFO (VERI-1018)] verilog/IRQ.v(41): compiling module 'Count'
+[INFO (VERI-8005)] verilog/IRQ.v(52): Unintentional Sequential element inferred for enable_int read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(46): Unintentional Sequential element inferred for Ready_count read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(63): Unintentional Sequential element inferred for b read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(51): Unintentional Sequential element inferred for Max_count_int read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(51): Unintentional Sequential element inferred for freq_int read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(95): Unintentional Sequential element inferred for divcounter read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(52): Unintentional Sequential element inferred for Ready_count_int read before write using blocking assignment
+[INFO (VERI-1018)] verilog/IRQ.v(114): compiling module 'IRQ'
+[WARN (VERI-1209)] verilog/IRQ.v(140): expression size 32 truncated to fit in target size 1
+[INFO (VERI-8005)] verilog/IRQ.v(122): Unintentional Sequential element inferred for irr_ebreak read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(122): Unintentional Sequential element inferred for enable read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(122): Unintentional Sequential element inferred for irr_tisirr read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for div_freq read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for timer_max_count read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for regirr read before write using blocking assignment
+[WARN (VERI-1209)] verilog/IRQ.v(181): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] verilog/IRQ.v(206): expression size 32 truncated to fit in target size 1
+[INFO (VERI-8005)] verilog/IRQ.v(122): Unintentional Sequential element inferred for flag_q read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for pc_irq_reg read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for irrstate_rd read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for addrm_q read before write using blocking assignment
+[INFO (VERI-8005)] verilog/IRQ.v(125): Unintentional Sequential element inferred for pc_c_q read before write using blocking assignment
+[INFO (VERI-1018)] verilog/MULT.v(3): compiling module 'FSM_Booth'
+[INFO (VERI-8005)] verilog/MULT.v(13): Unintentional Sequential element inferred for state read before write using blocking assignment
+[INFO (VERI-1018)] verilog/MULT.v(47): compiling module 'Alg_Booth'
+[WARN (VERI-1209)] verilog/MULT.v(62): expression size 32 truncated to fit in target size 17
+[INFO (VERI-8005)] verilog/MULT.v(58): Unintentional Sequential element inferred for Q1 read before write using blocking assignment
+[INFO (VERI-8005)] verilog/MULT.v(59): Unintentional Sequential element inferred for S read before write using blocking assignment
+[INFO (VERI-1018)] verilog/MULT.v(3): compiling module 'FSM_Booth:(BITS_BOOTH=17)'
+[INFO (VERI-8005)] verilog/MULT.v(13): Unintentional Sequential element inferred for state read before write using blocking assignment
+[INFO (VERI-1018)] verilog/MULT.v(47): compiling module 'Alg_Booth:(SWORD=18)'
+[INFO (VERI-8005)] verilog/MULT.v(58): Unintentional Sequential element inferred for Q1 read before write using blocking assignment
+[INFO (VERI-8005)] verilog/MULT.v(59): Unintentional Sequential element inferred for S read before write using blocking assignment
+[INFO (VERI-1018)] verilog/MULT.v(105): compiling module 'MULT'
+[INFO (VERI-8005)] verilog/MULT.v(126): Unintentional Sequential element inferred for rdu read before write using blocking assignment
+[INFO (VERI-8005)] verilog/MULT.v(110): Unintentional Sequential element inferred for Done read before write using blocking assignment
+[WARN (VERI-1209)] verilog/MULT.v(228): expression size 32 truncated to fit in target size 5
+[INFO (VERI-8005)] verilog/MULT.v(116): Unintentional Sequential element inferred for cont1 read before write using blocking assignment
+[WARN (VERI-1209)] verilog/MULT.v(232): expression size 32 truncated to fit in target size 5
+[INFO (VERI-8005)] verilog/MULT.v(116): Unintentional Sequential element inferred for cont2 read before write using blocking assignment
+[WARN (VERI-1209)] verilog/MULT.v(236): expression size 32 truncated to fit in target size 5
+[INFO (VERI-8005)] verilog/MULT.v(116): Unintentional Sequential element inferred for cont3 read before write using blocking assignment
+[INFO (VERI-1018)] verilog/UTILITY.v(3): compiling module 'UTILITY'
+[INFO (VERI-1018)] verilog/FSM.v(3): compiling module 'FSM'
+[WARN (VERI-1209)] verilog/FSM.v(107): expression size 2 truncated to fit in target size 1
+[INFO (VERI-1018)] verilog/mriscvcore.v(73): compiling module 'mriscvcore'
+[INFO (VERI-1018)] verilog/mriscvcore.v(9): compiling module 'top'
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          32 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (32 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      30 (30 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IMDS005): Number of multiple-driven bits in design: 192. Use "get_design_info -list multiple_driven" for more information.
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rstn outside_resetn".
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1486 of 6767 design flops, 0 of 0 design latches, 1 of 1 internal elements.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = on (auto)
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = auto
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = auto
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+AMcustom5: Custom engine code is hT3N1rhP11/52HrFRS21ROp2LOjVTgPvT8L8BGXHgLhaIuqtT4nARFjUqrBL+7pLmaTOzBepZW/Jm8SSrHDybSQtoNiO3y43wk+dEoWlsZizu97Fih6O6lPVG/LpWP5SsUPwlGagLNa1FKEFvwVXyX7//8prySbvSxIHXr5er+z4RAEA
+0: Using multistage preprocessing
+Ncustom6: Custom engine code is hT3OXrhPByJp3TrFSTLhUmMH4KVtJgmTCnNDF46yMXOKY48m4LS5nE7yBzFjA7kDuwO/GhGUpEPiky3p3wmPn3dJZHxFMsafSoObRzSC+tn7sEY0WbTdZ/FV4hL3MYH/b1CIUvXSWR4wqEoVLsmMOD4xIPT4lI1LO6ZCO7PnnWQuLwetnvKlrXx6wCW/A+x+enqslg1YPobi4wEF/EvbzOvcTYdJvl2s4H2yZg2b2ofAVN5WvhWk1HoBAA
+0: Starting reduce
+ADcustom7: Custom engine code is hT3Nv7hPv1752HrFRa2kROx2f/ECJeZB2AZsLdlO8VwmIuqtT4nIDFXclhg+O+o+DMmQCekbheGk0kK28laA9gaOFDXsQp29J3X615HY1IPHJWd6FUFvCHjO+p1k652b5JJvZlShNpGlGSXAiQe/mEAj6tEBAA
+Tricustom8: Custom engine code is hT3Nu7hPt1752DvFRa0kNDiyIV97VyejwM9C/jCLJjdPvusZONHY42VYUy0Q1ZotnhcVtNc56tJ5wbxv6V2+XpdsaSlHck5vfnbYjdwj1OECy9U+7oSQ0SZE3g5ayD+Phuh4odCJTjeKa2k4elM9ldQfkAEA
+Ncustom9: Custom engine code is hT3NR7hPByFp3TrFSTLhUmMH4KWtJglTyV/c51BHEeZWamnJv767nE6PCak26bd3gf3XGN3rIRheufhDieCJQVISo+gNYUKhiUedBKGtsP/a18svAnlMJZudHxDFwK5ufsyoxsIyiAeSY2oi3tEuoDHr5gw42DFKAG3PqO3CEsl8Azzdt3pl5nGA1Ifv2H02eYsFzWb/nfp8PMb3F0krE/EgBcm8TD9Div8BAA
+Tricustom10: Custom engine code is hT3Nu7hP3fiYQADBZnYcglNHp9bfd7EOeniIqP/ji8sGLQu8yhsFO+wxJ+O+R0bU8g/IewXFomyos+viQnWc2xYNYmMqpo3i40O7DaZR7qfp4YqNx26KRvQ/qx0BAA
+0: Finished reduce in 0.038s
+0.0.PRE: Performing Proof Simplification...
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Proof Simplification Iteration 1	[0.00 s]
+0.0.N: Proof Simplification Iteration 2	[0.02 s]
+0.0.N: Proof Simplification Iteration 3	[0.04 s]
+0.0.N: Proof Simplification Iteration 4	[0.05 s]
+0.0.N: Proof Simplification Iteration 5	[0.06 s]
+0.0.N: Proof Simplification Iteration 6	[0.07 s]
+0.0.PRE: Proof Simplification completed in 0.12 s
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 1
+0: Initial ProofGrid level: 1
+0: ProofGrid is starting event handling
+0.0.N: Proofgrid shell started at 44310@mics-eda(local) jg_39312_mics-eda_1
+0.0.Hp: Proofgrid shell started at 44311@mics-eda(local) jg_39312_mics-eda_1
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "top.RTL.REG_FILE_inst.MEM_FILE._assert_2"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.B: Proofgrid shell started at 44345@mics-eda(local) jg_39312_mics-eda_1
+0.0.Ht: Proofgrid shell started at 44344@mics-eda(local) jg_39312_mics-eda_1
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Trace Attempt  3	[0.04 s]
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "top.RTL.REG_FILE_inst.MEM_FILE._assert_2"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  5	[0.05 s]
+0.0.B: Trace Attempt  2	[0.02 s]
+0.0.B: Trace Attempt  3	[0.03 s]
+0.0.Ht: Trace Attempt  1	[0.04 s]
+0.0.Ht: Trace Attempt  2	[0.04 s]
+0.0.Ht: Trace Attempt  3	[0.04 s]
+0.0.Ht: Trace Attempt  4	[0.05 s]
+0.0.Ht: Trace Attempt  5	[0.05 s]
+0.0.B: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  5	[0.10 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  1	[0.39 s]
+0.0.N: Trace Attempt  2	[0.41 s]
+0.0.N: Trace Attempt  3	[0.42 s]
+0.0.N: Trace Attempt  5	[0.48 s]
+0.0.N: Validation of fixpoint was successful. Time = 0.01
+0.0.N: Requesting engine job to stop
+0.0.B: Requesting engine job to stop
+0.0.Hp: Requesting engine job to terminate
+0.0.Ht: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [0.70 s]
+0.0.N: A proof was found: No trace exists. [0.68 s]
+INFO (IPF057): 0.0.N: The property "top.RTL.REG_FILE_inst.MEM_FILE._assert_2" was proven in 0.68 s.
+0.0.N: Stopped processing property "top.RTL.REG_FILE_inst.MEM_FILE._assert_2"	[0.68 s].
+0.0.Ht: Interrupted (multi)
+0.0.Ht: Trace Attempt 18	[0.58 s]
+0.0.Ht: All properties determined. [0.65 s]
+0.0.N: All properties determined. [0.69 s]
+0.0.N: Exited with Success (@ 0.70 s)
+0: ProofGrid usable level: 0
+0.0.Ht: Exited with Success (@ 0.71 s)
+0.0.B: Trace Attempt 14	[0.62 s]
+0.0.B: Stopped processing property "top.RTL.REG_FILE_inst.MEM_FILE._assert_2"	[0.72 s].
+0.0.B: All properties determined. [0.72 s]
+0.0.B: Exited with Success (@ 0.78 s)
+0.0.Hp: Interrupted (multi)
+0.0.Hp: All properties determined. [0.80 s]
+0.0.Hp: Exited with Success (@ 0.81 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 94.42 %)
+--------------------------------------------------------------
+     engines started                               :     4
+     engine jobs started                           :     4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+      N        0.04        0.69        0.00       94.21 %
+     Hp        0.04        0.69        0.00       94.53 %
+     Ht        0.04        0.65        0.00       94.14 %
+      B        0.04        0.65        0.00       94.80 %
+    all        0.04        0.67        0.00       94.42 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.16        2.69        0.00
+
+    Data read    : 5.91 kiB
+    Data written : 4.79 kiB
+
+0: All pending notifications were processed.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 1 (100%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+[<embedded>] % cd /home/zhiyuanyan/SQED_tinyriscv/verification
+[<embedded>] % ls
+gen-btor.ys
+jgproject
+QEDFiles
+tinyriscv.tcl
+verilog
+[<embedded>] % source tinyriscv.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] ./QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] ./QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/clint.v'
+[INFO (VERI-1328)] ./verilog/clint.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/csr_reg.v'
+[INFO (VERI-1328)] ./verilog/csr_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ctrl.v'
+[INFO (VERI-1328)] ./verilog/ctrl.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/div.v'
+[INFO (VERI-1328)] ./verilog/div.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ex.v'
+[INFO (VERI-1328)] ./verilog/ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_tx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(71): identifier 'ack' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(79): identifier 'ack' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_rx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(60): identifier 'req' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(68): identifier 'req' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_dff.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_buf.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id.v'
+[INFO (VERI-1328)] ./verilog/id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id_ex.v'
+[INFO (VERI-1328)] ./verilog/id_ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/if_id.v'
+[INFO (VERI-1328)] ./verilog/if_id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/pc_reg.v'
+[INFO (VERI-1328)] ./verilog/pc_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/regs.v'
+[INFO (VERI-1328)] ./verilog/regs.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/regs.v(126): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/regs.v(146): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './verilog/rib.v'
+[INFO (VERI-1328)] ./verilog/rib.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/tinyriscv.v'
+[INFO (VERI-1328)] ./verilog/tinyriscv.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(48): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(49): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] ./verilog/tinyriscv.v(71): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] ./QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[INFO (VERI-1018)] ./QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] ./QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] ./QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] ./QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] ./QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] ./verilog/pc_reg.v(20): compiling module 'pc_reg'
+[INFO (VERI-1018)] ./verilog/ctrl.v(21): compiling module 'ctrl'
+[INFO (VERI-1018)] ./verilog/regs.v(20): compiling module 'regs'
+[INFO (VERI-1018)] ./verilog/csr_reg.v(20): compiling module 'csr_reg'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=8)'
+[INFO (VERI-1018)] ./verilog/if_id.v(20): compiling module 'if_id'
+[INFO (VERI-1018)] ./verilog/id.v(21): compiling module 'id'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=1)'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=5)'
+[INFO (VERI-1018)] ./verilog/id_ex.v(20): compiling module 'id_ex'
+[INFO (VERI-1018)] ./verilog/ex.v(21): compiling module 'ex'
+[WARN (VERI-1209)] ./verilog/ex.v(146): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./verilog/ex.v(147): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] ./verilog/div.v(22): compiling module 'div'
+[INFO (VERI-1018)] ./verilog/clint.v(22): compiling module 'clint'
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(73): compiling module 'tinyriscv'
+[WARN (VDB-1002)] ./verilog/tinyriscv.v(206): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(19): compiling module 'top'
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          22 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (22 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      27 (19 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst outside_rst".
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1142 of 6262 design flops, 0 of 0 design latches, 1 of 1 internal elements.
+INFO (IRS039): Reset analysis complete.
+ERROR (ENL024): Combinational loop found within the cone of influence for "RTL.u_ctrl.hold_flag_o[1]".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 1 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+[<embedded>] % cd ..
+[<embedded>] % cd SQED_zeroriscy
+couldn't change working directory to "SQED_zeroriscy": no such file or directory
+
+[<embedded>] % cd ..
+[<embedded>] % ls
+CDS.log
+CDS.log.cdslck
+design_btor
+design_btor_reverse
+design_SP.v
+design.v
+Desktop
+Documents
+Downloads
+init_1.txt
+init_debug.txt
+init_debug_use_origin_trace.txt
+init.txt
+inst_constraints.v
+jgproject
+modify_instructions.v
+mriscvcore
+Music
+PICO
+PICO_debug
+PICO_debug.db
+PICO_reverse_from_btor
+pico_rv32.sig
+picorv32_symbolic.sig
+pico_rv32_symbolic_starting.tcl
+picorv32_symbolic_withinit_qed_vld_out_q.sig
+picorv32_symbolic_withinit_qed_vld_out_q.sig~
+picorv32_symbolic_withinit.sig
+picorv32_symbolic_without_init.sig
+pico_rv32_symolic_starting_without_assump_debug.tcl
+pico_rv32_symolic_starting_without_assump.tcl
+pico_rv32.tcl
+pico_rv_32.v
+pico_rv32_withoutassuming.tcl
+pico_rv_32_withoutassuming.v
+pico_rv_symolic_starting.v
+pico_rv_symolic_starting_without_assump_debug.v
+pico_rv_symolic_starting_without_assump.v
+PICO_symbolic_starting
+PICO_symbolic_starting_new_tracing_method
+PICO_symbolic_starting_new_tracing_method_and_stall
+PICO_symbolic_starting_without_asuume_outside_reset
+Pictures
+Public
+qed_decoder.v
+qed_i_cache.v
+qed_instruction_mux.v
+qed.v
+RC.v
+SP
+SP.db
+SQED_RISCV_CPU
+SQED_tinyriscv
+SQED_zeroriscy
+Templates
+thinclient_drives
+Videos
+workspace
+[<embedded>] % cd SQED_zeroriscy
+[<embedded>] % ls
+envinvsyn
+verification
+[<embedded>] % cd verification
+[<embedded>] % ls
+jgproject
+jp_2.tcl
+jp.tcl
+QEDFiles
+system_verilog
+verilog
+[<embedded>] % source jp_2.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] ./QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] ./QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/cluster_clock_gating.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_alu.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_compressed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_controller.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_core.v'
+[WARN (VERI-1763)] ./verilog/zeroriscy_core.v(85): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/zeroriscy_core.v(86): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_cs_registers.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_debug_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_ex_block.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_fetch_fifo.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_id_stage.v'
+[WARN (VERI-8026)] ./verilog/zeroriscy_id_stage.v(88): Empty Port in Module Declaration
+[WARN (VERI-1294)] ./verilog/zeroriscy_id_stage.v(88): empty port in module declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_if_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_int_controller.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_load_store_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_mmult.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_multdiv_fast.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_prefetch_buffer.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_register_file_ff.v'
+[WARN (VERI-1763)] ./verilog/zeroriscy_register_file_ff.v(80): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/zeroriscy_register_file_ff.v(94): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_tracer_verilator.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/zeroriscy_tracer.v'
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] ./verilog/zeroriscy_core.v(117): Disabling old hierarchical reference handler
+[WARN (VERI-1927)] ./verilog/zeroriscy_core.v(116): port 'instr_addr_o' remains unconnected for this instance
+[WARN (VERI-2435)] ./verilog/zeroriscy_core.v(116): port 'instr_rdata_i' is not connected on this instance
+[INFO (VERI-1018)] ./QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[INFO (VERI-1018)] ./verilog/cluster_clock_gating.v(1): compiling module 'cluster_clock_gating'
+[INFO (VERI-1018)] ./QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] ./QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] ./QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] ./QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] ./QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] ./verilog/zeroriscy_fetch_fifo.v(1): compiling module 'zeroriscy_fetch_fifo'
+[WARN (VDB-1002)] ./verilog/zeroriscy_fetch_fifo.v(141): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] ./verilog/zeroriscy_prefetch_buffer.v(1): compiling module 'zeroriscy_prefetch_buffer'
+[INFO (VERI-1018)] ./verilog/zeroriscy_compressed_decoder.v(1): compiling module 'zeroriscy_compressed_decoder'
+[INFO (VERI-1018)] ./verilog/zeroriscy_if_stage.v(1): compiling module 'zeroriscy_if_stage'
+[INFO (VERI-1018)] ./verilog/zeroriscy_register_file_ff.v(1): compiling module 'zeroriscy_register_file:(RV32E=0)'
+[WARN (VERI-1221)] ./verilog/zeroriscy_register_file_ff.v(52): 'qed_vld_out_final_i' should be on the sensitivity list
+[WARN (VERI-1466)] ./verilog/zeroriscy_register_file_ff.v(52): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1167)] ./verilog/zeroriscy_register_file_ff.v(53): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./verilog/zeroriscy_register_file_ff.v(54): 'wdata_a_i' should be on the sensitivity list
+[WARN (VERI-1466)] ./verilog/zeroriscy_register_file_ff.v(54): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1466)] ./verilog/zeroriscy_register_file_ff.v(57): assignment under multiple clock edges is not supported for synthesis
+[INFO (VERI-1018)] ./verilog/zeroriscy_decoder.v(1): compiling module 'zeroriscy_decoder'
+[INFO (VERI-1018)] ./verilog/zeroriscy_controller.v(1): compiling module 'zeroriscy_controller'
+[WARN (VERI-1142)] ./verilog/zeroriscy_controller.v(108): system task 'display' is ignored for synthesis
+[INFO (VERI-1018)] ./verilog/zeroriscy_int_controller.v(1): compiling module 'zeroriscy_int_controller'
+[INFO (VERI-1018)] ./verilog/zeroriscy_id_stage.v(1): compiling module 'zeroriscy_id_stage'
+[WARN (VERI-1221)] ./verilog/zeroriscy_id_stage.v(554): 'id_wb_fsm_ns' should be on the sensitivity list
+[WARN (VERI-1466)] ./verilog/zeroriscy_id_stage.v(554): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1221)] ./verilog/zeroriscy_id_stage.v(555): 'branch_set_n' should be on the sensitivity list
+[WARN (VERI-1466)] ./verilog/zeroriscy_id_stage.v(555): assignment under multiple clock edges is not supported for synthesis
+[INFO (VERI-1018)] ./verilog/zeroriscy_alu.v(1): compiling module 'zeroriscy_alu'
+[WARN (VERI-1209)] ./verilog/zeroriscy_alu.v(69): expression size 33 truncated to fit in target size 32
+[INFO (VERI-1018)] ./verilog/zeroriscy_multdiv_fast.v(1): compiling module 'zeroriscy_multdiv_fast'
+[WARN (VERI-1209)] ./verilog/zeroriscy_multdiv_fast.v(110): expression size 32 truncated to fit in target size 5
+[WARN (VERI-1209)] ./verilog/zeroriscy_multdiv_fast.v(152): expression size 33 truncated to fit in target size 32
+[WARN (VERI-1209)] ./verilog/zeroriscy_multdiv_fast.v(241): expression size 18 truncated to fit in target size 16
+[INFO (VERI-1018)] ./verilog/zeroriscy_mmult.v(105): compiling module 'ram0'
+[WARN (VERI-1220)] ./verilog/zeroriscy_mmult.v(115): using initial value of 'mem' since it is never assigned
+[INFO (VERI-1018)] ./verilog/zeroriscy_mmult.v(1): compiling module 'zeroriscy_mmult'
+[INFO (VERI-1018)] ./verilog/zeroriscy_ex_block.v(1): compiling module 'zeroriscy_ex_block'
+[INFO (VERI-1018)] ./verilog/zeroriscy_load_store_unit.v(1): compiling module 'zeroriscy_load_store_unit'
+[INFO (VERI-1018)] ./verilog/zeroriscy_cs_registers.v(1): compiling module 'zeroriscy_cs_registers'
+[INFO (VERI-1018)] ./verilog/zeroriscy_debug_unit.v(1): compiling module 'zeroriscy_debug_unit'
+[INFO (VERI-1018)] ./verilog/zeroriscy_core.v(118): compiling module 'zeroriscy_core'
+[WARN (VERI-8028)] ./verilog/zeroriscy_core.v(362): missing/open ports on instance id_stage_i of module zeroriscy_id_stage
+[INFO (VERI-1018)] ./verilog/zeroriscy_core.v(1): compiling module 'top'
+[WARN (VERI-8028)] ./verilog/zeroriscy_core.v(92): missing/open ports on instance RTL of module zeroriscy_core
+[WARN (VDB-1013)] ./verilog/zeroriscy_core.v(116): input port 'instr_rdata_i[31]' is not connected on this instance
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          26 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (26 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      27 (26 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (WNL018): ./verilog/zeroriscy_multdiv_fast.v(93): multiplication operator mult_17s_17s (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(69): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(69): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(69): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(70): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(70): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ./verilog/zeroriscy_mmult.v(70): multiplication operator mult_8s_8s (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "outside_rstn".
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 3 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 2 iterations. Assigned values for 33 of 5485 design flops, 1 of 1026 design latches, 1 of 1 internal elements.
+WARNING (WRS031): 1061 of 5485 design flop(s) with asynchronous reset condition, but not reset. Run "get_reset_info -x_value -with_reset_pin" to get a list of such flops.
+INFO (IRS039): Reset analysis complete.
+ERROR (ENL024): Combinational loop found within the cone of influence for "RTL.id_stage_i.id_wb_fsm_cs".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 1 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+[<embedded>] % get_reset_info
+List of Registers: 4
+-----------------
+RTL.id_stage_i.registers_i.num_dup_insts
+  Value at reset: 16'b0
+RTL.id_stage_i.registers_i.num_orig_insts
+  Value at reset: 16'b0
+RTL.id_stage_i.registers_i.precessor
+  Value at reset: 1'b0
+RTL.id_stage_i.registers_i.qed_vld_out_final_reg
+  Value at reset: 1'b0
+{RTL.id_stage_i.registers_i.num_dup_insts 16'b0} {RTL.id_stage_i.registers_i.num_orig_insts 16'b0} {RTL.id_stage_i.registers_i.precessor 1'b0} {RTL.id_stage_i.registers_i.qed_vld_out_final_reg 1'b0}
+[<embedded>] % source jp.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] ./QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] ./QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/param0.v'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/include/zeroriscy_defines.sv'
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(37): parameter 'OPCODE_SYSTEM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(38): parameter 'OPCODE_FENCE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(39): parameter 'OPCODE_OP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(40): parameter 'OPCODE_OPIMM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(41): parameter 'OPCODE_STORE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(42): parameter 'OPCODE_LOAD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(43): parameter 'OPCODE_BRANCH' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(44): parameter 'OPCODE_JALR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(45): parameter 'OPCODE_JAL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(46): parameter 'OPCODE_AUIPC' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(47): parameter 'OPCODE_LUI' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(48): parameter 'OPCODE_MMULT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(55): parameter 'OPCODE_LOAD_POST' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(56): parameter 'OPCODE_STORE_POST' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(57): parameter 'OPCODE_PULP_OP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(58): parameter 'OPCODE_VECOP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(59): parameter 'OPCODE_HWLOOP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(61): parameter 'REGC_S1' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(62): parameter 'REGC_RD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(63): parameter 'REGC_ZERO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(75): parameter 'ALU_OP_WIDTH' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(77): parameter 'ALU_ADD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(78): parameter 'ALU_SUB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(79): parameter 'ALU_ADDU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(80): parameter 'ALU_SUBU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(81): parameter 'ALU_ADDR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(82): parameter 'ALU_SUBR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(83): parameter 'ALU_ADDUR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(84): parameter 'ALU_SUBUR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(86): parameter 'ALU_XOR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(87): parameter 'ALU_OR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(88): parameter 'ALU_AND' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(91): parameter 'ALU_SRA' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(92): parameter 'ALU_SRL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(93): parameter 'ALU_ROR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(94): parameter 'ALU_SLL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(97): parameter 'ALU_BEXT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(98): parameter 'ALU_BEXTU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(99): parameter 'ALU_BINS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(100): parameter 'ALU_BCLR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(101): parameter 'ALU_BSET' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(104): parameter 'ALU_FF1' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(105): parameter 'ALU_FL1' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(106): parameter 'ALU_CNT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(107): parameter 'ALU_CLB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(110): parameter 'ALU_EXTS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(111): parameter 'ALU_EXT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(114): parameter 'ALU_LTS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(115): parameter 'ALU_LTU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(116): parameter 'ALU_LES' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(117): parameter 'ALU_LEU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(118): parameter 'ALU_GTS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(119): parameter 'ALU_GTU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(120): parameter 'ALU_GES' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(121): parameter 'ALU_GEU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(122): parameter 'ALU_EQ' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(123): parameter 'ALU_NE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(126): parameter 'ALU_SLTS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(127): parameter 'ALU_SLTU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(128): parameter 'ALU_SLETS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(129): parameter 'ALU_SLETU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(132): parameter 'ALU_ABS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(133): parameter 'ALU_CLIP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(134): parameter 'ALU_CLIPU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(137): parameter 'ALU_INS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(140): parameter 'ALU_MIN' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(141): parameter 'ALU_MINU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(142): parameter 'ALU_MAX' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(143): parameter 'ALU_MAXU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(146): parameter 'ALU_DIVU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(147): parameter 'ALU_DIV' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(148): parameter 'ALU_REMU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(149): parameter 'ALU_REM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(151): parameter 'ALU_SHUF' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(152): parameter 'ALU_SHUF2' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(153): parameter 'ALU_PCKLO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(154): parameter 'ALU_PCKHI' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(157): parameter 'MD_OP_MULL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(158): parameter 'MD_OP_MULH' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(159): parameter 'MD_OP_DIV' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(160): parameter 'MD_OP_REM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(163): parameter 'VEC_MODE32' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(164): parameter 'VEC_MODE16' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(165): parameter 'VEC_MODE8' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(178): parameter 'CSR_OP_NONE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(179): parameter 'CSR_OP_WRITE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(180): parameter 'CSR_OP_SET' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(181): parameter 'CSR_OP_CLEAR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(185): parameter 'SP_DVR0' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(186): parameter 'SP_DCR0' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(187): parameter 'SP_DMR1' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(188): parameter 'SP_DMR2' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(190): parameter 'SP_DVR_MSB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(191): parameter 'SP_DCR_MSB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(192): parameter 'SP_DMR_MSB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(193): parameter 'SP_DSR_MSB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(213): parameter 'SEL_REGFILE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(214): parameter 'SEL_FW_EX' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(215): parameter 'SEL_FW_WB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(216): parameter 'SEL_MISALIGNED' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(219): parameter 'OP_A_REGA_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(220): parameter 'OP_A_CURRPC' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(221): parameter 'OP_A_IMM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(222): parameter 'OP_A_REGB_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(223): parameter 'OP_A_REGC_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(226): parameter 'IMMA_Z' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(227): parameter 'IMMA_ZERO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(230): parameter 'OP_B_REGB_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(231): parameter 'OP_B_REGC_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(232): parameter 'OP_B_IMM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(233): parameter 'OP_B_REGA_OR_FWD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(234): parameter 'OP_B_BMASK' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(235): parameter 'OP_B_ZERO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(238): parameter 'IMMB_I' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(239): parameter 'IMMB_S' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(240): parameter 'IMMB_U' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(241): parameter 'IMMB_PCINCR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(242): parameter 'IMMB_S2' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(243): parameter 'IMMB_S3' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(244): parameter 'IMMB_VS' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(245): parameter 'IMMB_VU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(246): parameter 'IMMB_SHUF' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(247): parameter 'IMMB_CLIP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(248): parameter 'IMMB_BI' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(249): parameter 'IMMB_UJ' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(250): parameter 'IMMB_SB' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(253): parameter 'BMASK_A_ZERO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(254): parameter 'BMASK_A_S3' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(256): parameter 'BMASK_B_S2' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(257): parameter 'BMASK_B_S3' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(258): parameter 'BMASK_B_ZERO' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(259): parameter 'BMASK_B_ONE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(261): parameter 'BMASK_A_REG' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(262): parameter 'BMASK_A_IMM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(263): parameter 'BMASK_B_REG' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(264): parameter 'BMASK_B_IMM' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(278): parameter 'PC_BOOT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(279): parameter 'PC_JUMP' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(280): parameter 'PC_EXCEPTION' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(281): parameter 'PC_ERET' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(282): parameter 'PC_DBG_NPC' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(285): parameter 'EXC_PC_ILLINSN' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(286): parameter 'EXC_PC_ECALL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(287): parameter 'EXC_PC_LOAD' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(288): parameter 'EXC_PC_STORE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(289): parameter 'EXC_PC_IRQ' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(292): parameter 'EXC_CAUSE_ILLEGAL_INSN' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(293): parameter 'EXC_CAUSE_BREAKPOINT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(294): parameter 'EXC_CAUSE_ECALL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(299): parameter 'EXC_OFF_RST' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(300): parameter 'EXC_OFF_ILLINSN' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(301): parameter 'EXC_OFF_ECALL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(302): parameter 'EXC_OFF_LSUERR' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(306): parameter 'DBG_SETS_W' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(308): parameter 'DBG_SETS_IRQ' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(309): parameter 'DBG_SETS_ECALL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(310): parameter 'DBG_SETS_EILL' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(311): parameter 'DBG_SETS_ELSU' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(312): parameter 'DBG_SETS_EBRK' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(313): parameter 'DBG_SETS_SSTE' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_defines.sv(315): parameter 'DBG_CAUSE_HALT' declared inside package 'zeroriscy_defines' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/include/zeroriscy_tracer_defines.sv'
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(17): parameter 'INSTR_LUI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(18): parameter 'INSTR_AUIPC' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(19): parameter 'INSTR_JAL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(20): parameter 'INSTR_JALR' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(22): parameter 'INSTR_BEQ' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(23): parameter 'INSTR_BNE' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(24): parameter 'INSTR_BLT' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(25): parameter 'INSTR_BGE' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(26): parameter 'INSTR_BLTU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(27): parameter 'INSTR_BGEU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(28): parameter 'INSTR_BALL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(30): parameter 'INSTR_ADDI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(31): parameter 'INSTR_SLTI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(32): parameter 'INSTR_SLTIU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(33): parameter 'INSTR_XORI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(34): parameter 'INSTR_ORI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(35): parameter 'INSTR_ANDI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(36): parameter 'INSTR_SLLI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(37): parameter 'INSTR_SRLI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(38): parameter 'INSTR_SRAI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(40): parameter 'INSTR_ADD' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(41): parameter 'INSTR_SUB' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(42): parameter 'INSTR_SLL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(43): parameter 'INSTR_SLT' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(44): parameter 'INSTR_SLTU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(45): parameter 'INSTR_XOR' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(46): parameter 'INSTR_SRL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(47): parameter 'INSTR_SRA' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(48): parameter 'INSTR_OR' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(49): parameter 'INSTR_AND' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(52): parameter 'INSTR_CSRRW' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(53): parameter 'INSTR_CSRRS' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(54): parameter 'INSTR_CSRRC' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(55): parameter 'INSTR_CSRRWI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(56): parameter 'INSTR_CSRRSI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(57): parameter 'INSTR_CSRRCI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(58): parameter 'INSTR_ECALL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(59): parameter 'INSTR_EBREAK' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(60): parameter 'INSTR_MRET' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(61): parameter 'INSTR_WFI' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(64): parameter 'INSTR_DIV' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(65): parameter 'INSTR_DIVU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(66): parameter 'INSTR_REM' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(67): parameter 'INSTR_REMU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(68): parameter 'INSTR_PMUL' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(69): parameter 'INSTR_PMUH' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(70): parameter 'INSTR_PMULHSU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(71): parameter 'INSTR_PMULHU' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[WARN (VERI-2418)] ./system_verilog/include/zeroriscy_tracer_defines.sv(74): parameter 'INSTR_MMULT32' declared inside package 'zeroriscy_tracer_defines' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/cluster_clock_gating.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_alu.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_alu.sv(26): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_compressed_decoder.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_controller.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_controller.sv(28): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_core.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_core.sv(29): analyzing included file './system_verilog/zeroriscy_config.sv'
+[WARN (VERI-1763)] ./system_verilog/zeroriscy_core.sv(97): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./system_verilog/zeroriscy_core.sv(98): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_cs_registers.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_cs_registers.sv(27): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_debug_unit.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_debug_unit.sv(25): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_decoder.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_decoder.sv(29): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_ex_block.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_ex_block.sv(29): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_fetch_fifo.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_fetch_fifo.sv(21): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_id_stage.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_id_stage.sv(29): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_if_stage.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_if_stage.sv(28): analyzing included file './system_verilog/zeroriscy_config.sv'
+[WARN (VERI-1763)] ./system_verilog/zeroriscy_if_stage.sv(129): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_int_controller.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_load_store_unit.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_load_store_unit.sv(28): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_mmult.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_mmult.sv(135): analyzing included file './system_verilog/param0.v'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_multdiv_fast.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_prefetch_buffer.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_register_file_ff.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_register_file_ff.sv(27): analyzing included file './system_verilog/zeroriscy_config.sv'
+[WARN (VERI-1763)] ./system_verilog/zeroriscy_register_file_ff.sv(133): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./system_verilog/zeroriscy_register_file_ff.sv(151): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_tracer_verilator.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_tracer_verilator.sv(28): analyzing included file './system_verilog/zeroriscy_config.sv'
+[-- (VERI-1482)] Analyzing Verilog file './system_verilog/zeroriscy_tracer.sv'
+[INFO (VERI-1328)] ./system_verilog/zeroriscy_tracer.sv(28): analyzing included file './system_verilog/zeroriscy_config.sv'
+[WARN (VERI-1206)] ./system_verilog/zeroriscy_tracer.sv(461): overwriting previous definition of module 'zeroriscy_tracer'
+[INFO (VERI-2142)] ./system_verilog/zeroriscy_tracer_verilator.sv(438): previous definition of design element 'zeroriscy_tracer' is here
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] ./system_verilog/zeroriscy_core.sv(127): Disabling old hierarchical reference handler
+[WARN (VERI-1927)] ./system_verilog/zeroriscy_core.sv(125): port 'instr_addr_o' remains unconnected for this instance
+[WARN (VERI-2435)] ./system_verilog/zeroriscy_core.sv(125): port 'instr_rdata_i' is not connected on this instance
+[INFO (VERI-1018)] ./QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[WARN (VERI-1220)] ./system_verilog/param0.v(1): using initial value of 'mem' since it is never assigned
+[INFO (VERI-1018)] ./system_verilog/cluster_clock_gating.sv(11): compiling module 'cluster_clock_gating'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_fetch_fifo.sv(26): compiling module 'zeroriscy_fetch_fifo'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_prefetch_buffer.sv(23): compiling module 'zeroriscy_prefetch_buffer'
+[INFO (VERI-1018)] ./QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] ./QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] ./QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] ./QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] ./QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_compressed_decoder.sv(27): compiling module 'zeroriscy_compressed_decoder'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_if_stage.sv(32): compiling module 'zeroriscy_if_stage'
+[WARN (VDB-1002)] ./system_verilog/zeroriscy_if_stage.sv(158): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_register_file_ff.sv(29): compiling module 'zeroriscy_register_file'
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_register_file_ff.sv(92): 'qed_vld_out_final_i' should be on the sensitivity list
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_register_file_ff.sv(92): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_register_file_ff.sv(93): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_register_file_ff.sv(94): 'wdata_a_i' should be on the sensitivity list
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_register_file_ff.sv(94): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_register_file_ff.sv(97): assignment under multiple clock edges is not supported for synthesis
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_decoder.sv(33): compiling module 'zeroriscy_decoder'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_controller.sv(33): compiling module 'zeroriscy_controller'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_int_controller.sv(26): compiling module 'zeroriscy_int_controller'
+[WARN (VERI-1995)] ./system_verilog/zeroriscy_int_controller.sv(91): unique/priority if/case is not full
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_id_stage.sv(40): compiling module 'zeroriscy_id_stage'
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(442): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_id_stage.sv(443): 'regfile_alu_waddr_id' should be on the sensitivity list
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(444): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_id_stage.sv(445): 'regfile_waddr_wb1' should be on the sensitivity list
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(446): if-condition does not match any sensitivity list edge
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(448): if-condition does not match any sensitivity list edge
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_id_stage.sv(449): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(453): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_id_stage.sv(454): 'regfile_waddr_wb1' should be on the sensitivity list
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_id_stage.sv(454): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(458): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_id_stage.sv(459): 'regfile_waddr_wb2' should be on the sensitivity list
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_id_stage.sv(459): assignment under multiple clock edges is not supported for synthesis
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(463): if-condition does not match any sensitivity list edge
+[WARN (VERI-1221)] ./system_verilog/zeroriscy_id_stage.sv(464): 'regfile_alu_waddr_id' should be on the sensitivity list
+[WARN (VERI-1167)] ./system_verilog/zeroriscy_id_stage.sv(465): if-condition does not match any sensitivity list edge
+[WARN (VERI-1466)] ./system_verilog/zeroriscy_id_stage.sv(466): assignment under multiple clock edges is not supported for synthesis
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_alu.sv(30): compiling module 'zeroriscy_alu'
+[WARN (VERI-1209)] ./system_verilog/zeroriscy_alu.sv(133): expression size 33 truncated to fit in target size 32
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_multdiv_fast.sv(28): compiling module 'zeroriscy_multdiv_fast'
+[WARN (VERI-1209)] ./system_verilog/zeroriscy_multdiv_fast.sv(150): expression size 32 truncated to fit in target size 5
+[WARN (VERI-1209)] ./system_verilog/zeroriscy_multdiv_fast.sv(208): expression size 33 truncated to fit in target size 32
+[WARN (VERI-1209)] ./system_verilog/zeroriscy_multdiv_fast.sv(331): expression size 18 truncated to fit in target size 16
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_mmult.sv(130): compiling module 'ram0'
+[INFO (VERI-2571)] ./system_verilog/param0.v(1): extracting RAM for identifier 'mem'
+[WARN (VERI-9033)] ./system_verilog/param0.v(1): array mem (size 9216) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[WARN (VERI-9005)] ./system_verilog/zeroriscy_mmult.sv(141): 16-bit index expression 'addr' is larger than the required 8 bits. This might lead to an out-of-bound access
+[WARN (VDB-1002)] ./system_verilog/param0.v(1): net 'mem' does not have a driver
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_mmult.sv(14): compiling module 'zeroriscy_mmult'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_ex_block.sv(33): compiling module 'zeroriscy_ex_block'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_load_store_unit.sv(30): compiling module 'zeroriscy_load_store_unit'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_cs_registers.sv(37): compiling module 'zeroriscy_cs_registers'
+[WARN (VERI-9005)] ./system_verilog/zeroriscy_cs_registers.sv(452): 5-bit index expression 'csr_addr_i[4:0]' is larger than the required 4 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_debug_unit.sv(29): compiling module 'zeroriscy_debug_unit'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_tracer.sv(41): compiling module 'zeroriscy_tracer'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_core.sv(128): compiling module 'zeroriscy_core'
+[WARN (VERI-1330)] ./system_verilog/zeroriscy_core.sv(860): actual bit length 32 differs from formal bit length 5 for port 'wb_reg_waddr'
+[INFO (VERI-1018)] ./system_verilog/zeroriscy_core.sv(33): compiling module 'top'
+[WARN (VERI-8028)] ./system_verilog/zeroriscy_core.sv(103): missing/open ports on instance RTL of module zeroriscy_core
+[WARN (VDB-1013)] ./system_verilog/zeroriscy_core.sv(125): input port 'instr_rdata_i[31]' is not connected on this instance
+WARNING (WNL008): Module "zeroriscy_tracer" is blackboxed due to analyze/elaborate bbox_m or compilation configuration. All instances will be blackboxed.
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          30 (3 packages)
+  Single run mode                         On
+  Pipeline                                On (26 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      30 (30 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "outside_rstn".
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 3 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 2 iterations. Assigned values for 33 of 5471 design flops, 1 of 1010 design latches, 1 of 1 internal elements.
+WARNING (WRS031): 1047 of 5471 design flop(s) with asynchronous reset condition, but not reset. Run "get_reset_info -x_value -with_reset_pin" to get a list of such flops.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = on (auto)
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = auto
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = auto
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.02s
+0.0.PRE: Performing Proof Simplification...
+0.0.N: clocks: 37, declared: 1, looping: 0, posedge: 33, negedge: 0, noedge: 4, bothedge: 0
+0.0.N: Clocks that will never have a posedge: clock_en_i [vTrue], a18502, a28710, a28724, 
+0.0.N: Proof Simplification Iteration 1	[0.00 s]
+0.0.N: Proof Simplification Iteration 2	[0.03 s]
+0.0.N: Proof Simplification Iteration 3	[0.06 s]
+0.0.N: Proof Simplification Iteration 4	[0.07 s]
+0.0.N: Proof Simplification Iteration 5	[0.09 s]
+0.0.N: Proof Simplification Iteration 6	[0.11 s]
+0.0.PRE: Proof Simplification completed in 0.28 s
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 1
+0: Initial ProofGrid level: 1
+0: ProofGrid is starting event handling
+0.0.N: Proofgrid shell started at 66099@mics-eda(local) jg_39312_mics-eda_2
+0.0.Hp: Proofgrid shell started at 66100@mics-eda(local) jg_39312_mics-eda_2
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "top.RTL.id_stage_i.registers_i._assert_2"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.Ht: Proofgrid shell started at 66133@mics-eda(local) jg_39312_mics-eda_2
+0.0.B: Proofgrid shell started at 66134@mics-eda(local) jg_39312_mics-eda_2
+0.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Trace Attempt  2	[0.04 s]
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "top.RTL.id_stage_i.registers_i._assert_2"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.06 s]
+0.0.Ht: Trace Attempt  1	[0.05 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.Ht: Trace Attempt  2	[0.06 s]
+0.0.N: Trace Attempt  3	[0.09 s]
+0.0.N: Requesting engine job to stop
+0.0.B: Requesting engine job to stop
+0.0.Hp: Requesting engine job to terminate
+0.0.Ht: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [0.17 s]
+0.0.N: A trace with 3 cycles was found. [0.15 s]
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.RTL.id_stage_i.registers_i._assert_2" in 0.18 s.
+0.0.N: Stopped processing property "top.RTL.id_stage_i.registers_i._assert_2"	[0.18 s].
+0.0.N: All properties determined. [0.16 s]
+0.0.N: Exited with Success (@ 0.18 s)
+0: ProofGrid usable level: 0
+0.0.Ht: Trace Attempt  3	[0.14 s]
+0.0.Ht: Interrupted (multi)
+0.0.Ht: All properties determined. [0.14 s]
+0.0.B: Stopped processing property "top.RTL.id_stage_i.registers_i._assert_2"	[0.14 s].
+0.0.Ht: Exited with Success (@ 0.19 s)
+0.0.B: All properties determined. [0.13 s]
+0.0.B: Exited with Success (@ 0.20 s)
+0.0.Hp: Interrupted (multi)
+0.0.Hp: All properties determined. [0.20 s]
+0.0.Hp: Exited with Success (@ 0.22 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 77.97 %)
+--------------------------------------------------------------
+     engines started                               :     4
+     engine jobs started                           :     4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+      N        0.04        0.17        0.00       79.29 %
+     Hp        0.04        0.17        0.00       79.89 %
+     Ht        0.04        0.13        0.00       75.90 %
+      B        0.04        0.12        0.00       75.96 %
+    all        0.04        0.15        0.00       77.97 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.17        0.59        0.00
+
+    Data read    : 76.31 kiB
+    Data written : 3.33 kiB
+
+0: All pending notifications were processed.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 1 (100%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+[<embedded>] % visualize -violation -property <embedded>::top.RTL.id_stage_i.registers_i._assert_2 -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::top.RTL.id_stage_i.registers_i._assert_2".
+cex
+WARNING (WG013): Signal "SIGHUP" has been received from an unknown source (external to Jasper) in the analysis session.
+    For message help, type "help -message WG013".
+WARNING (WG013): Signal "SIGHUP" has been received from an unknown source (external to Jasper) in the analysis session.
+    For message help, type "help -message WG013".
+WARNING (WG010): Signal "SIGHUP" has been caught. The analysis session will exit.
+    For message help, type "help -message WG010".
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 0.436 GB.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO (IPL015): The Tcl-thread exited with status 129.
+INFO (IPL016): Exiting the analysis session with status 129.

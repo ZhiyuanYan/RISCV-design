@@ -1,0 +1,65 @@
+2023-07-19 23:53:21.433105 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433167 (8112) main____ INFO    Jasper version info
+2023-07-19 23:53:21.433172 (8112) main____ INFO      tool      : Jasper 2022.12
+2023-07-19 23:53:21.433177 (8112) main____ INFO      version   : 2022.12p001 64 bits
+2023-07-19 23:53:21.433180 (8112) main____ INFO      build date: 2023.01.26 12:35:17 UTC
+2023-07-19 23:53:21.433183 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433185 (8112) main____ INFO    Runtime info:
+2023-07-19 23:53:21.433189 (8112) main____ INFO      platform  : Linux 3.10.0-1160.el7.x86_64 x86_64
+2023-07-19 23:53:21.433194 (8112) main____ INFO      hostname  : mics-eda
+2023-07-19 23:53:21.433197 (8112) main____ INFO      pid       : 8112
+2023-07-19 23:53:21.433200 (8112) main____ INFO      arguments : '-style' 'windows'
+2023-07-19 23:53:21.433205 (8112) main____ INFO      locale    : UTF-8
+2023-07-19 23:53:21.433207 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433210 (8112) main____ INFO    System resource limits info:
+2023-07-19 23:53:21.433213 (8112) main____ INFO      virtual memory: unlimited
+2023-07-19 23:53:21.433216 (8112) main____ INFO      cpu time      : unlimited
+2023-07-19 23:53:21.433221 (8112) main____ INFO      processes     : 65535
+2023-07-19 23:53:21.433228 (8112) main____ INFO      stack size    : 8388608 B
+2023-07-19 23:53:21.433232 (8112) main____ INFO      core file size: 0 B
+2023-07-19 23:53:21.433234 (8112) main____ INFO      open files    : 65535
+2023-07-19 23:53:21.433237 (8112) main____ INFO      file size     : unlimited
+2023-07-19 23:53:21.433240 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433242 (8112) main____ INFO    Memory statistics:
+2023-07-19 23:53:21.433245 (8112) main____ INFO      total physical memory  : 1056083564 kB
+2023-07-19 23:53:21.433248 (8112) main____ INFO      free physical memory   : 544146288 kB
+2023-07-19 23:53:21.433251 (8112) main____ INFO      committed address space: 238353248 kB
+2023-07-19 23:53:21.433253 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433864 (8112) main____ INFO    Important environment variables:
+2023-07-19 23:53:21.433873 (8112) main____ INFO      DISPLAY            : ':13.0'
+2023-07-19 23:53:21.433877 (8112) main____ INFO      JASPER_INSTALL_DIR : '/usr/cadence/installs/jasper_2022.12p001'
+2023-07-19 23:53:21.433881 (8112) main____ INFO      JASPER_KERNEL_CHECK: '1'
+2023-07-19 23:53:21.433884 (8112) main____ INFO      JASPER_OS_CHECK    : '1'
+2023-07-19 23:53:21.433887 (8112) main____ INFO      LANG               : 'en_US.UTF-8'
+2023-07-19 23:53:21.433892 (8112) main____ INFO      LM_LICENSE_FILE    : '5280@10.100.0.27'
+2023-07-19 23:53:21.433895 (8112) main____ INFO    ----------------------------------------
+2023-07-19 23:53:21.433978 (8112) lic_core INFO    Initializing license system ...
+2023-07-19 23:53:21.434579 (8112) lic_core INFO    ... license system initialized.
+2023-07-19 23:53:21.436202 (8112) lic__man INFO    Claim 'main' for <ui>.
+2023-07-19 23:53:21.436237 (8112) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-07-19 23:53:21.441140 (8112) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-07-19 23:53:21.441166 (8112) lic_core INFO    (2) checking out 'jasper_pint' ...
+2023-07-19 23:53:21.448336 (8112) lic_core INFO    ... (2) checkout succeeded
+2023-07-19 23:53:21.448370 (8112) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 23:53:21.448380 (8112) lic_core INFO    (3) checking out 'jasper_fpv' ...
+2023-07-19 23:53:21.450819 (8112) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-07-19 23:53:21.450840 (8112) lic_core INFO    (4) checking out 'jasper_fao' ...
+2023-07-19 23:53:21.458532 (8112) lic_core INFO    ... (4) checkout succeeded
+2023-07-19 23:53:21.458857 (8112) main____ INFO    Tool inactivity delay is 480000 ms.
+2023-07-19 23:53:21.843725 (8112) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 23:53:21.936068 (8112) lic__man INFO    Unclaim 'fpv' for <ui>.
+2023-07-19 23:53:21.936102 (8112) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 23:53:21.939630 (8112) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2023-07-19 23:53:21.942475 (8112) session_ INFO    Analysis session with session id 'session_0' started (pid: 8174)
+2023-07-19 23:53:22.525848 (8112) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:49958)
+2023-07-19 23:53:47.397276 (8112) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 23:53:47.399907 (8112) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:53:48.805593 (8112) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:53:48.866182 (8112) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 23:53:48.866225 (8112) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 23:53:48.959067 (8112) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 23:54:18.181448 (8112) main____ INFO    About to exit: requested from GUI
+2023-07-19 23:54:18.224289 (8112) session_ INFO    Analysis session 'session_0' disconnected.
+2023-07-19 23:54:18.229490 (8112) lic_core INFO    (2) checkin jasper_pint
+2023-07-19 23:54:18.230541 (8112) lic_core INFO    (4) checkin jasper_fao
+2023-07-19 23:54:18.231744 (8112) main____ INFO    Exiting with status 0.

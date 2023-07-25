@@ -53,16 +53,20 @@ module regs(
 
     reg[`RegBus] regs[0:`RegNum - 1];
 
+    reg qed_vld_out_final;
     // 写寄存器
     always @ (posedge clk) begin
         if (rst == `RstDisable) begin
             // 优先ex模块写操作
             if ((we_i == `WriteEnable) && (waddr_i != `ZeroReg)) begin
+                qed_vld_out_final<= qed_vld_out_id_ex;
                 regs[waddr_i] <= wdata_i;
             end else if ((jtag_we_i == `WriteEnable) && (jtag_addr_i != `ZeroReg)) begin
                 regs[jtag_addr_i] <= jtag_data_i;
             end
         end
+        if(outside_rst== `RstEnable)
+            qed_vld_out_final<=0;
     end
 
     // 读寄存器1
@@ -111,17 +115,9 @@ module regs(
 	wire __NOTSTART__;
 	wire qed_reach_commit;
     reg precessor;
-	//assign qed_reach_commit = qed_vld_out_id_ex || (qed_vld_out_if_id && (!rst) && (we_i) && (waddr_i));
-	assign qed_reach_commit = qed_vld_out_id_ex;
-    assign __NOTSTART__ = (qed_reach_commit && (num_orig_insts==0)&&(num_dup_insts==0));
-	always@(posedge clk)begin
-        if(!outside_rst)
-            precessor<= 0;
-        else
-            if(__NOTSTART__!=0)
-                precessor <= 1;
-    end
-    assume property ((precessor)||((regs[0] == regs[16])&&(regs[1] == regs[17])&&(regs[2] == regs[18])&&(regs[3] == regs[19])&&(regs[4] == regs[20])&&(regs[5] == regs[21])
+	assign qed_reach_commit = qed_vld_out_final  || (qed_vld_out_id_ex && (outside_rst== `RstDisable) && (we_i) && (waddr_i));
+	//assign qed_reach_commit = qed_vld_out_id_ex;
+    assume property (~(qed_reach_commit && (num_orig_insts==0)&&(num_dup_insts==0))||((regs[0] == regs[16])&&(regs[1] == regs[17])&&(regs[2] == regs[18])&&(regs[3] == regs[19])&&(regs[4] == regs[20])&&(regs[5] == regs[21])
 	&&(regs[6] == regs[22])&&(regs[7] == regs[23])&&(regs[8] == regs[24])&&(regs[9] == regs[25])&&(regs[10] == regs[26])&&(regs[11] == regs[27])&&(regs[12] == regs[28])
 	&&(regs[13] == regs[29])&&(regs[14] == regs[30])&&(regs[15] == regs[31])));
 
@@ -145,3 +141,4 @@ module regs(
 
     assert property ((!(qed_ready&&(qed_reach_commit)))||(regs[1] == regs[17]));
 endmodule
+

@@ -49,7 +49,6 @@ module if_id(
     wire[`INT_BUS] int_flag;
     gen_pipe_dff #(8) int_ff(clk, rst, hold_en, `INT_NONE, int_flag_i, int_flag);
     assign int_flag_o = int_flag;
-    
     always@(posedge clk) begin
         if(outside_rst == `RstEnable)
             qed_vld_out_if_id <= 0;

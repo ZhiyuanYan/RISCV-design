@@ -39,7 +39,7 @@ module top(
 	always @* begin
 		no_reset: assume(outside_resetn);
 	end
-
+   assume property (Rdata==32'b0);
    mriscvcore RTL(
     .clk(clk),
     .instruction(instruction),
@@ -165,7 +165,7 @@ MEMORY_INTERFACE MEMORY_INTERFACE_inst(
     .Wstrb(Wstrb),
     // To DECO_INSTR
     .inst(inst),
-    .qed_ifu_instruction(qed_ifu_instruction),
+    .qed_ifu_instruction_o(qed_ifu_instruction),
     // To FSM
     .W_R(W_R_mem),
     .wordsize(wordsize_mem),
@@ -321,3 +321,4 @@ FSM FSM_inst
     assign rdw_rsrn = (is_rd_util | is_rd_alu | done_mul | (is_rd_mem & done_mem)) & (enable_exec | enable_exec_mem);
 
 endmodule
+

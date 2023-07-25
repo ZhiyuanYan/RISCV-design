@@ -1,0 +1,195 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2022.12
+# platform  : Linux 3.10.0-1160.el7.x86_64
+# version   : 2022.12p001 64 bits
+# build date: 2023.01.26 12:35:17 UTC
+# ----------------------------------------
+# started   : 2023-07-19 23:53:22 CST
+# hostname  : mics-eda.(none)
+# pid       : 8174
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:33321' '-style' 'windows' '-data' 'AAAAanicY2RgYLCp////PwMYMFcBCQEGHwZfhiAGVyDpzxAGpOGA8QGUYcPIgAwYAxtQaAYGVphCmBIAzrAJsQ==' '-proj' '/home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2022 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/zhiyuanyan/SQED_tinyriscv/verification/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_pint" and "jasper_fao".
+INFO: reading configuration file "/home/zhiyuanyan/.config/cadence/jasper.conf".
+% ls
+gen-btor.ys
+jgproject
+QEDFiles
+tinyriscv.tcl
+verilog
+% source tinysircv.tcl
+couldn't read file "tinysircv.tcl": no such file or directory
+
+% source tinyriscv.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cadence/installs/jasper_2022.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_i_cache.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/modify_instruction.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_decoder.v'
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/inst_constraints.v'
+[WARN (VERI-1206)] ./QEDFiles/inst_constraints.v(123): overwriting previous definition of module 'inst_constraint'
+[INFO (VERI-2142)] ./QEDFiles/inst_constraints.v(123): previous definition of design element 'inst_constraint' is here
+[-- (VERI-1482)] Analyzing Verilog file './QEDFiles/qed_instruction_mux.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/clint.v'
+[INFO (VERI-1328)] ./verilog/clint.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/csr_reg.v'
+[INFO (VERI-1328)] ./verilog/csr_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ctrl.v'
+[INFO (VERI-1328)] ./verilog/ctrl.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/div.v'
+[INFO (VERI-1328)] ./verilog/div.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/ex.v'
+[INFO (VERI-1328)] ./verilog/ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_tx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(71): identifier 'ack' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_tx.v(79): identifier 'ack' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/full_handshake_rx.v'
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(60): identifier 'req' is used before its declaration
+[WARN (VERI-1875)] ./verilog/full_handshake_rx.v(68): identifier 'req' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_dff.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/gen_buf.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id.v'
+[INFO (VERI-1328)] ./verilog/id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/id_ex.v'
+[INFO (VERI-1328)] ./verilog/id_ex.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/if_id.v'
+[INFO (VERI-1328)] ./verilog/if_id.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/pc_reg.v'
+[INFO (VERI-1328)] ./verilog/pc_reg.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/regs.v'
+[INFO (VERI-1328)] ./verilog/regs.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/regs.v(126): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/regs.v(146): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file './verilog/rib.v'
+[INFO (VERI-1328)] ./verilog/rib.v(17): analyzing included file './verilog/defines.v'
+[-- (VERI-1482)] Analyzing Verilog file './verilog/tinyriscv.v'
+[INFO (VERI-1328)] ./verilog/tinyriscv.v(17): analyzing included file './verilog/defines.v'
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(48): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./verilog/tinyriscv.v(49): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+INFO (ISW003): Top module name is "top".
+[INFO (HIER-8002)] ./verilog/tinyriscv.v(71): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] ./QEDFiles/inst_constraints.v(9): compiling module 'inst_constraint'
+[INFO (VERI-1018)] ./QEDFiles/qed_decoder.v(9): compiling module 'qed_decoder'
+[INFO (VERI-1018)] ./QEDFiles/modify_instruction.v(9): compiling module 'modify_instruction'
+[INFO (VERI-1018)] ./QEDFiles/qed_instruction_mux.v(6): compiling module 'qed_instruction_mux'
+[INFO (VERI-1018)] ./QEDFiles/qed_i_cache.v(6): compiling module 'qed_i_cache'
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(54): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ./QEDFiles/qed_i_cache.v(57): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] ./QEDFiles/qed.v(9): compiling module 'qed'
+[INFO (VERI-1018)] ./verilog/pc_reg.v(20): compiling module 'pc_reg'
+[INFO (VERI-1018)] ./verilog/ctrl.v(21): compiling module 'ctrl'
+[INFO (VERI-1018)] ./verilog/regs.v(20): compiling module 'regs'
+[INFO (VERI-1018)] ./verilog/csr_reg.v(20): compiling module 'csr_reg'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=8)'
+[INFO (VERI-1018)] ./verilog/if_id.v(20): compiling module 'if_id'
+[INFO (VERI-1018)] ./verilog/id.v(21): compiling module 'id'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=1)'
+[INFO (VERI-1018)] ./verilog/gen_dff.v(18): compiling module 'gen_pipe_dff:(DW=5)'
+[INFO (VERI-1018)] ./verilog/id_ex.v(20): compiling module 'id_ex'
+[INFO (VERI-1018)] ./verilog/ex.v(21): compiling module 'ex'
+[WARN (VERI-1209)] ./verilog/ex.v(146): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./verilog/ex.v(147): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] ./verilog/div.v(22): compiling module 'div'
+[INFO (VERI-1018)] ./verilog/clint.v(22): compiling module 'clint'
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(73): compiling module 'tinyriscv'
+[WARN (VDB-1002)] ./verilog/tinyriscv.v(206): net 'qed_exec_dup' does not have a driver
+[INFO (VERI-1018)] ./verilog/tinyriscv.v(19): compiling module 'top'
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          22 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (22 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      27 (19 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst outside_rst".
+Ncustom1: Custom engine code is hT3Ng7hPPfiYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSl+CwjiTMAQA
+Bcustom2: Custom engine code is hT3Nm7hPr1Vp3Di1Ra2USNIGL4JypRnLKLAdF6JAyuavO2JfGCiY9OZJhcAcOUnLx5xwNdhILGrAWX9s+z2WDkKwNR7tAfClBEjRFVQeq6DU54boFgEA
+AMcustom3: Custom engine code is hT3Ng7hP/feYQOTDZ3qhYOwGAM51eA+J/FjkM5shLioAsqhgLR4Ft+O1BuKG6ilQ83B9tLXSmmqwm7g9AQA
+Mpcustom4: Custom engine code is hT3NZbhP9fmY2AbBQnsjfOxn6c+6e6yL+/e8fZFmaQrnlgEA
+INFO (IPF036): Starting proof on task: "<embedded>", 1 properties to prove with 0 already proven/unreachable
+background 0
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1142 of 6262 design flops, 0 of 0 design latches, 1 of 1 internal elements.
+INFO (IRS039): Reset analysis complete.
+ERROR (ENL024): Combinational loop found within the cone of influence for "RTL.u_ctrl.hold_flag_o[1]".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF059): Completed proof on task: "<embedded>" for proof thread 0
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 1 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 0.394 GB.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

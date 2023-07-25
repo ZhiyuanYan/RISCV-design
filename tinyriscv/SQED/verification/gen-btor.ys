@@ -1,26 +1,11 @@
-read_verilog -formal ./QEDFiles/inst_constraints.v \
+read_verilog -formal ./verilog_PICO/pico_rv_32_symbolic_starting.v \
+./QEDFiles/inst_constraints.v \
 ./QEDFiles/modify_instruction.v \
 ./QEDFiles/qed_decoder.v \
 ./QEDFiles/qed_i_cache.v \
 ./QEDFiles/qed_instruction_mux.v \
-./QEDFiles/qed.v \
-./verilog/tinyriscv.v \
-./verilog/rib.v \
-./verilog/regs.v \
-./verilog/pc_reg.v \
-./verilog/if_id.v \
-./verilog/id.v \
-./verilog/id_ex.v \
-./verilog/gen_dff.v \
-./verilog/gen_buf.v \
-./verilog/full_handshake_tx.v \
-./verilog/full_handshake_rx.v \
-./verilog/ex.v \
-./verilog/div.v \
-./verilog/defines.v \
-./verilog/ctrl.v \
-./verilog/csr_reg.v \
-./verilog/clint.v;
+./QEDFiles/qed.v;
+
 # prep does a conservative elaboration
 # of the top module provided
 prep -top top;
@@ -54,11 +39,10 @@ flatten;
 # This turns all undriven signals into
 # inputs
 setundef -undriven -expose;
-sim -clock clk -reset rst -n 5 -rstlen 5 -w top
-sim -clock clk -reset outside_rst -n 5 -rstlen 5 -w top
+sim -clock clk -resetn reset_x -n 5 -rstlen 5 -w top
 opt;
 
 dffunmap;
 
 # This writes to a file in BTOR2 format
-write_btor -s tinyriscv.btor2
+write_btor -s pico.btor2

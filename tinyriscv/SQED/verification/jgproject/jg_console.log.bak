@@ -1,0 +1,89 @@
+2023-07-19 22:54:44.698532 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.698594 (39256) main____ INFO    Jasper version info
+2023-07-19 22:54:44.698600 (39256) main____ INFO      tool      : Jasper 2022.12
+2023-07-19 22:54:44.698604 (39256) main____ INFO      version   : 2022.12p001 64 bits
+2023-07-19 22:54:44.698608 (39256) main____ INFO      build date: 2023.01.26 12:35:17 UTC
+2023-07-19 22:54:44.698610 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.698613 (39256) main____ INFO    Runtime info:
+2023-07-19 22:54:44.698617 (39256) main____ INFO      platform  : Linux 3.10.0-1160.el7.x86_64 x86_64
+2023-07-19 22:54:44.698623 (39256) main____ INFO      hostname  : mics-eda
+2023-07-19 22:54:44.698626 (39256) main____ INFO      pid       : 39256
+2023-07-19 22:54:44.698629 (39256) main____ INFO      arguments : '-style' 'windows'
+2023-07-19 22:54:44.698633 (39256) main____ INFO      locale    : UTF-8
+2023-07-19 22:54:44.698636 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.698639 (39256) main____ INFO    System resource limits info:
+2023-07-19 22:54:44.698642 (39256) main____ INFO      virtual memory: unlimited
+2023-07-19 22:54:44.698645 (39256) main____ INFO      cpu time      : unlimited
+2023-07-19 22:54:44.698650 (39256) main____ INFO      processes     : 65535
+2023-07-19 22:54:44.698656 (39256) main____ INFO      stack size    : 8388608 B
+2023-07-19 22:54:44.698660 (39256) main____ INFO      core file size: 0 B
+2023-07-19 22:54:44.698663 (39256) main____ INFO      open files    : 65535
+2023-07-19 22:54:44.698665 (39256) main____ INFO      file size     : unlimited
+2023-07-19 22:54:44.698668 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.698671 (39256) main____ INFO    Memory statistics:
+2023-07-19 22:54:44.698674 (39256) main____ INFO      total physical memory  : 1056083564 kB
+2023-07-19 22:54:44.698676 (39256) main____ INFO      free physical memory   : 544872560 kB
+2023-07-19 22:54:44.698679 (39256) main____ INFO      committed address space: 236493800 kB
+2023-07-19 22:54:44.698682 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.699290 (39256) main____ INFO    Important environment variables:
+2023-07-19 22:54:44.699299 (39256) main____ INFO      DISPLAY            : ':13.0'
+2023-07-19 22:54:44.699304 (39256) main____ INFO      JASPER_INSTALL_DIR : '/usr/cadence/installs/jasper_2022.12p001'
+2023-07-19 22:54:44.699307 (39256) main____ INFO      JASPER_KERNEL_CHECK: '1'
+2023-07-19 22:54:44.699310 (39256) main____ INFO      JASPER_OS_CHECK    : '1'
+2023-07-19 22:54:44.699314 (39256) main____ INFO      LANG               : 'en_US.UTF-8'
+2023-07-19 22:54:44.699318 (39256) main____ INFO      LM_LICENSE_FILE    : '5280@10.100.0.27'
+2023-07-19 22:54:44.699321 (39256) main____ INFO    ----------------------------------------
+2023-07-19 22:54:44.699403 (39256) lic_core INFO    Initializing license system ...
+2023-07-19 22:54:44.700028 (39256) lic_core INFO    ... license system initialized.
+2023-07-19 22:54:44.701697 (39256) lic__man INFO    Claim 'main' for <ui>.
+2023-07-19 22:54:44.701736 (39256) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-07-19 22:54:44.705400 (39256) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-07-19 22:54:44.705426 (39256) lic_core INFO    (2) checking out 'jasper_pint' ...
+2023-07-19 22:54:44.712867 (39256) lic_core INFO    ... (2) checkout succeeded
+2023-07-19 22:54:44.712901 (39256) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 22:54:44.712911 (39256) lic_core INFO    (3) checking out 'jasper_fpv' ...
+2023-07-19 22:54:44.715394 (39256) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2023-07-19 22:54:44.715415 (39256) lic_core INFO    (4) checking out 'jasper_fao' ...
+2023-07-19 22:54:44.723347 (39256) lic_core INFO    ... (4) checkout succeeded
+2023-07-19 22:54:44.723681 (39256) main____ INFO    Tool inactivity delay is 480000 ms.
+2023-07-19 22:54:45.110470 (39256) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 22:54:45.204150 (39256) lic__man INFO    Unclaim 'fpv' for <ui>.
+2023-07-19 22:54:45.204186 (39256) lic__man INFO    Claim 'fpv' for <ui>.
+2023-07-19 22:54:45.207869 (39256) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2023-07-19 22:54:45.210196 (39256) session_ INFO    Analysis session with session id 'session_0' started (pid: 39312)
+2023-07-19 22:54:45.825398 (39256) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:38878)
+2023-07-19 22:55:23.572564 (39256) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 22:55:23.573575 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 22:55:24.996440 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 22:55:25.060382 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 22:55:25.060427 (39256) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 22:55:25.166033 (39256) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 22:58:59.759768 (39256) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 22:58:59.760083 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 22:59:00.778026 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 22:59:00.858722 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 22:59:00.858763 (39256) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 22:59:02.062742 (39256) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 23:07:01.592130 (39256) lic__man INFO    Entering idle state.
+2023-07-19 23:10:04.005200 (39256) lic__man INFO    Leaving idle state.
+2023-07-19 23:10:23.232202 (39256) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 23:10:23.232485 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:10:24.648549 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:10:24.710605 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 23:10:24.710646 (39256) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 23:10:24.804661 (39256) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 23:18:24.592134 (39256) lic__man INFO    Entering idle state.
+2023-07-19 23:25:35.313450 (39256) lic__man INFO    Leaving idle state.
+2023-07-19 23:26:14.271267 (39256) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 23:26:14.272557 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:26:15.958044 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:26:16.023035 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 23:26:16.023077 (39256) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 23:26:16.132818 (39256) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 23:30:52.063573 (39256) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2023-07-19 23:30:52.063680 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:30:53.920930 (39256) lic__man INFO    Unclaim everything for 'session_0'.
+2023-07-19 23:30:53.987976 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.
+2023-07-19 23:30:53.988016 (39256) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2023-07-19 23:30:54.718958 (39256) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2023-07-19 23:30:57.038292 (39256) lic__man INFO    Claim 'fpv' for 'session_0'.

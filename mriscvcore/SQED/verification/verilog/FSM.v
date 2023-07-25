@@ -77,7 +77,6 @@ module FSM
             end else
                 case (state)
                     S0_fetch: begin
-                        qed_vld_out_q <= qed_vld_out;
                         if(!en_mem) begin
                             en_mem <= 1'b1;
                             W_R_mem <= 2'b11;                // For instruction fetching
@@ -100,6 +99,7 @@ module FSM
                         end 
                     end
                     S1_decode: begin
+                        qed_vld_out_q <= qed_vld_out;
                         if ( is_illisn ) begin
                             state <= S4_trap;
                         end else begin
@@ -154,3 +154,4 @@ module FSM
     end
 
 endmodule
+

@@ -16,11 +16,11 @@ read_verilog -formal ./verilog/ALU.v \
 
 prep -top top;
 hierarchy -check
-#proc
+proc
 chformal -assume -early;
 
-memory;
+memory -nordff;
 flatten
 setundef -undriven -expose;
-sim -clock clk -resetn outside_resetn -rstlen 1 -n 1 -w top
+sim -clock clk -resetn outside_resetn -rstlen 5 -n 5 -w top
 write_btor -s problem.btor2

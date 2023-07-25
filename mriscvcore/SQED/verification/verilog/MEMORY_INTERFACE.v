@@ -28,7 +28,7 @@ module MEMORY_INTERFACE(
     output reg [31:0] Wdata,
     output [31:0] rd,
     output reg [31:0] inst,
-    output reg [31:0] qed_ifu_instruction,
+    output reg [31:0] qed_ifu_instruction_o,
     output reg ARvalid,
     output reg RReady,
     output reg AWvalid,
@@ -339,12 +339,10 @@ module MEMORY_INTERFACE(
     //////Here is the QED module//////
     reg stall_IF;
     always@(posedge clock)begin
-        if(!rstn)
-            stall_IF <= 0;
-        else
-            stall_IF<= !(en_instr && en_read);
+        stall_IF<= !(en_instr && en_read);
     end
     wire  qed_exec_dup;
+    wire [31:0] qed_ifu_instruction;
     qed qed0 ( // Inputs
             .clk(clock),
             .rst(~outside_resetn),
@@ -356,8 +354,15 @@ module MEMORY_INTERFACE(
             .qed_ifu_instruction(qed_ifu_instruction),
             .vld_out(qed_vld_out));
 
+    always@* begin
+        if(qed_vld_out)
+            qed_ifu_instruction_o = qed_ifu_instruction;
+    end
+
+
     assign rd= rd_en?Rdataq:32'bz;
          
 
 endmodule
+
 
