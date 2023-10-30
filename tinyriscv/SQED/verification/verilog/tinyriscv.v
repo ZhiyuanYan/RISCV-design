@@ -47,7 +47,8 @@ module top(
     ///QED 测试我们应该不需要jtag
     assume property (jtag_reg_we_i==0);
     assume property (rib_ex_data_i[`MemBus]==32'b0);
-    assume property (jtag_halt_flag_i==`Hold_None);
+    assume property (jtag_halt_flag_i==`HoldDisable);
+    assume property (rib_hold_flag_i==`HoldDisable);
     tinyriscv RTL(
         .instruction(instruction),
         .clk(clk),
@@ -208,7 +209,7 @@ module tinyriscv(
     wire [31:0]  qed_ifu_instruction;
     reg [31:0]  qed_ifu_instruction_o;
     wire stall_IF;
-    assign stall_IF = (ctrl_hold_flag_o >= `Hold_Pc);
+    assign stall_IF = (ctrl_hold_flag_o >= `Hold_If);
 	qed qed0 ( // Inputs
       .clk(clk),
             .rst(~outside_rst),
@@ -221,12 +222,17 @@ module tinyriscv(
             .vld_out(qed_vld_out));
     
     
-    always@* begin
-        if(~outside_rst)
-            qed_ifu_instruction_o = 32'b1111111;
-        if(qed_vld_out)
-            qed_ifu_instruction_o = qed_ifu_instruction;
-    end
+    // always@* begin
+    //     if(~outside_rst)
+    //         qed_ifu_instruction_o = 32'b1111111;
+    //     //if(qed_vld_out)
+	// else if(qed_vld_out&&(~stall_IF))         
+	//     qed_ifu_instruction_o = qed_ifu_instruction;
+	// else begin
+	// 	if(~stall_IF)	
+	// 		qed_ifu_instruction_o = 32'b1111111;	
+	// 	end
+    // end
     
     // pc_reg模块例化
     pc_reg u_pc_reg(

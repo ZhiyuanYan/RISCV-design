@@ -211,6 +211,7 @@ module top import ibex_pkg::*;
 
       logic qed_vld_out_id_ex;
       logic qed_vld_out_id_mid;
+      logic qed_vld_out_final;
       assume property (data_rdata_i==32'b0);
       assume property (data_rvalid_i==1'b0);
       ibex_core RTL( .clk_i(clk_i),
@@ -296,7 +297,6 @@ module top import ibex_pkg::*;
       .wdata_a_i(rf_wdata_wb_ecc_o),
       .we_a_i   ((rf_we_wb_o)&&(~data_we_o)),
       .err_o    (rf_alert_major_internal),
-      .qed_vld_out_id_ex (qed_vld_out_id_ex),
       .qed_vld_out_id_mid(qed_vld_out_id_mid),
       .qed_vld_out_final(qed_vld_out_final)
     );

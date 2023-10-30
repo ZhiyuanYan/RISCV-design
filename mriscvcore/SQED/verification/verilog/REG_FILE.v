@@ -27,17 +27,18 @@ module true_dpram_sclk
 	reg [31:0] ram[31:0];
 	(* keep *)
 	reg qed_vld_out_final;
+	reg addr_a_temp;
 	// Port A
 	always @ (posedge clk)
 	begin
 		if(!outside_resetn) begin
 			qed_vld_out_final<=0;
 		end else begin
-		if (we_a) 
-		begin
-			qed_vld_out_final<=qed_vld_out_q;
-			ram[addr_a] <= data_a;
-		end
+		qed_vld_out_final<=qed_vld_out_q;
+		if (we_a) begin
+				ram[addr_a] <= data_a;
+				addr_a_temp <= addr_a;
+			end
 		q_a <= addr_a?ram[addr_a]:32'd0;		// Assign zero if index is zero because zero register
 		q_b <= addr_b?ram[addr_b]:32'd0;		// Assign zero if index is zero because zero register
 	end
@@ -58,12 +59,12 @@ module true_dpram_sclk
 	wire [1:0] num_dup_commits;
 	
 
-	assign num_orig_commits = ((qed_reach_commit == 1)&&(we_a==1)&&(addr_a < 16))&&(addr_a!=5'b00000)? 2'b01 : 2'b00 ;
+	assign num_orig_commits = ((qed_reach_commit == 1)&&(we_a==1)&&(addr_a_temp < 16))&&(addr_a_temp!=5'b00000)? 2'b01 : 2'b00 ;
 
 
    // When destination register is 5'b0, it remains the same for both original and duplicate
 //    assign num_dup_commits = (cpuregs_write == 1)&&(dstarf1 >= 16)//arfwe1 = architecture register file write enable  dstarf1 = destination of the architecture register file 
-   	assign num_dup_commits = ((qed_reach_commit == 1)&&(we_a==1)&&(addr_a >= 16))? 2'b01  : 2'b00 ;
+   	assign num_dup_commits = ((qed_reach_commit == 1)&&(we_a==1)&&(addr_a_temp >= 16))? 2'b01  : 2'b00 ;
 
    	always @(posedge clk) begin
 		if (!outside_resetn) begin

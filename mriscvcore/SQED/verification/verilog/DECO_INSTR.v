@@ -26,7 +26,7 @@ module DECO_INSTR(
         // rs2i = {5{1'b1}};
         // codif = {12{1'b1}};   // ILLISN
         immr = {32{1'b1}};
-        rdi = {5{1'b1}};
+        rdi = {5{1'b0}};
         rs1i ={5{1'b1}};
         rs2i = {5{1'b1}};
         codif = {12{1'b1}};   // ILLISN

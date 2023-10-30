@@ -138,6 +138,7 @@ MEMORY_INTERFACE MEMORY_INTERFACE_inst(
     .resetn(rstn),
     .outside_resetn(outside_resetn),
     .instruction(instruction),
+    .rdw_rsrn(rdw_rsrn),
     // Data buses
     .rs1(rs1),
     .rs2(rs2),

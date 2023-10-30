@@ -5,6 +5,7 @@ module MEMORY_INTERFACE(
     input resetn,
     input outside_resetn,
     input [31:0] instruction,
+    input rdw_rsrn,
     input [31:0] rs1,
     input [31:0] rs2,
     input [31:0] Rdata_mem,
@@ -355,8 +356,14 @@ module MEMORY_INTERFACE(
             .vld_out(qed_vld_out));
 
     always@* begin
-        if(qed_vld_out)
-            qed_ifu_instruction_o = qed_ifu_instruction;
+        if(~outside_resetn)
+            qed_ifu_instruction_o <=32'b0000;
+        if(qed_vld_out&&(~stall_IF))
+            qed_ifu_instruction_o <= qed_ifu_instruction;
+        else begin
+            if(~stall_IF)
+                qed_ifu_instruction_o <=32'b0000;
+        end
     end
 
 

@@ -42,7 +42,6 @@ module ibex_register_file_ff #(
 
   // This indicates whether spurious WE are detected.
   output logic                 err_o,
-  input  logic                 qed_vld_out_id_ex,
   input  logic                 qed_vld_out_id_mid,
   input  logic                 qed_vld_out_final
 );
@@ -127,18 +126,18 @@ module ibex_register_file_ff #(
     wire [1:0] num_dup_commits;
 	wire __NOTSTART__;
 	wire qed_reach_commit;
-    reg precessor;
-	assign qed_reach_commit = qed_vld_out_final_reg || ((qed_vld_out_id_mid||qed_vld_out_final) && (outside_rstn) && (we_a_i) && (waddr_a_i));
+    reg predecessor;
+	assign qed_reach_commit = ((qed_vld_out_id_mid) && (outside_rstn) && (we_a_i) && (waddr_a_i));
 	// assign qed_reach_commit = qed_vld_out_final;
     assign __NOTSTART__ = (qed_reach_commit && (num_orig_insts==0)&&(num_dup_insts==0));
 	 always_ff @(posedge clk_i, negedge outside_rstn)begin
         if(~outside_rstn)
-            precessor<= 0;
+            predecessor<= 0;
         else
             if(__NOTSTART__!=0)
-                precessor <= 1;
+                predecessor <= 1;
     end
-  assume property ((precessor)||((rf_reg[0] == rf_reg[16])&&(rf_reg[1] == rf_reg[17])&&(rf_reg[2] == rf_reg[18])&&(rf_reg[3] == rf_reg[19])&&(rf_reg[4] == rf_reg[20])&&(rf_reg[5] == rf_reg[21])
+  assume property (~(__NOTSTART__)||((rf_reg[0] == rf_reg[16])&&(rf_reg[1] == rf_reg[17])&&(rf_reg[2] == rf_reg[18])&&(rf_reg[3] == rf_reg[19])&&(rf_reg[4] == rf_reg[20])&&(rf_reg[5] == rf_reg[21])
 	&&(rf_reg[6] == rf_reg[22])&&(rf_reg[7] == rf_reg[23])&&(rf_reg[8] == rf_reg[24])&&(rf_reg[9] == rf_reg[25])&&(rf_reg[10] == rf_reg[26])&&(rf_reg[11] == rf_reg[27])&&(rf_reg[12] == rf_reg[28])
 	&&(rf_reg[13] == rf_reg[29])&&(rf_reg[14] == rf_reg[30])&&(rf_reg[15] == rf_reg[31])));
     // wire latched_rd;
